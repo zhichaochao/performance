@@ -46,6 +46,7 @@ class AdminUser extends Controller
     }
 
     /**
+    
      * 修改密码
      */
     public function password()
