@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit">
+		<title>个人中心</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/commons.js" ></script>
+	</head>
+	<body class="hei">
+		
+		<!--左边导航-->
+		<div class="lf_nav">
+			<div class="top">
+				<a href="###">
+					<img class="logo1" src="img/png/logo1.png"/>
+					<img class="logo2" src="img/png/logo2.png"/>
+				</a>
+			</div>
+			
+			<ul class="lf_ul clearfix">
+				<li class="active">
+					<a href="###">
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>考核待办</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>考核模板</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>目标管理</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>考核结果</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>团队管理</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>企业设置</span>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+		
+		
+		<!--上导航-->
+		<div class="top_nav clearfix">
+			<!--返回-->
+			<div class="fanhui clearfix">
+				<a class="fh_a" href="###">返回</a>
+			</div>
+			<!--个人中心、头像-->
+			<div class="head_img">
+				<a href="###">
+					<span></span>
+					<i>
+						<img src="img/heda_img.jpg" alt="" />
+					</i>
+				</a>
+			</div>
+			
+			<!--消息提醒-->
+			<div class="message">
+				<a href="###">
+					<i class="active"></i>
+				</a>
+			</div>
+			
+			<!--搜索-->
+			<div class="nav_search">
+				<form>
+					<input class="in_text" type="text"/>
+					<input class="in_btn" type="submit" value=""/>
+				</form>
+			</div>
+			
+		</div>
+		
+		
+		<!--右边主内容-->
+		<div class="r_content presonal_center clearfix">
+			
+			<div class="lf_img clearfix">
+				<img class="bg_img" src="img/grzx_01.jpg"/>
+				
+				<div class="tx_img">
+					<div class="file_div">
+						<!--<input class="file_in"  onchange="getphoto(this)" type="file" />-->
+						<input type="file" class="file_in" id="file"/>
+						<img class="tx" src="img/grzx_02jpg.jpg"/>
+						<p>更换头像</p>	
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="rf_text clearfix">
+				<form action="">
+					
+					<div class="label clearfix">
+						<h1>个人信息</h1>
+						<label for="">
+							<span class="ts_sp">姓名</span>
+							<input type="text" value="王晓晨" />
+						</label>
+						<label for="">
+							<span class="ts_sp">性别</span>
+							<select name="">
+								<option value="">男</option>
+								<option value="">女</option>
+							</select>
+						</label>
+						<label for="">
+							<span class="ts_sp">部门</span>
+							<select name="">
+								<option value="">全力以赴</option>
+								<option value="">勇往直前</option>
+								<option value="">思创</option>
+								<option value="">尼佳</option>
+								<option value="">乐米</option>
+								<option value="">总经办</option>
+								<option value="">财务部</option>
+								<option value="">采购部</option>
+								<option value="">人事部</option>
+								<option value="">储运部</option>
+								<option value="">技术部</option>
+								<option value="">运营部</option>
+							</select>
+						</label>
+						<label for="">
+							<span class="ts_sp">职位</span>
+							<input type="text" value="人事主管" />
+						</label>
+					</div>
+					
+					<div class="label clearfix">
+						<h1>更改密码</h1>
+						<label for="">
+							<span class="ts_sp">原密码</span>
+							<input type="text" value="000000" />
+						</label>
+						<label for="">
+							<span class="ts_sp">新密码</span>
+							<input type="text" value="123456" />
+						</label>
+						<label for="">
+							<span class="ts_sp">再次确认</span>
+							<input type="text" value="123456" />
+						</label>
+					</div>
+					
+					<input class="in_sub" type="submit" value="确定" />
+				</form>
+			</div>
+		</div>
+		
+		
+		
+		
+	</body>
+</html>
+<script>
+	$(function(){
+		$(".rf_text").height($(".lf_img").height());
+		
+		$(window).resize(function(){
+			$(".rf_text").height($(".lf_img").height());
+		})
+		
+	})
+	
+    //调取上传框
+    $(".file_in").change(function(){   
+ 	var file = this.files[0];
+    if(window.FileReader){    
+		var reader = new FileReader();    
+		reader.readAsDataURL(file);    
+		reader.onloadend = function (e) {
+			$(".file_div .tx").attr("src",e.target.result);    
+		};    
+    } 
+});
+	 
+    
+</script>

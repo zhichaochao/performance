@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit">
+		<title>预览考核模板</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/commons.js" ></script>
+	</head>
+	<body class="hei">
+		
+		<!--左边导航-->
+		<div class="lf_nav">
+			<div class="top">
+				<a href="###">
+					<img class="logo1" src="img/png/logo1.png"/>
+					<img class="logo2" src="img/png/logo2.png"/>
+				</a>
+			</div>
+			
+			<ul class="lf_ul clearfix">
+				<li class="active">
+					<a href="###">
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>考核待办</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>考核模板</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>目标管理</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>考核结果</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>团队管理</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>企业设置</span>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+		
+		
+		<!--上导航-->
+		<div class="top_nav clearfix">
+			
+			<!--个人中心、头像-->
+			<div class="head_img">
+				<a href="###">
+					<span></span>
+					<i>
+						<img src="img/heda_img.jpg" alt="" />
+					</i>
+				</a>
+			</div>
+			
+			<!--消息提醒-->
+			<div class="message">
+				<a href="###">
+					<i class="active"></i>
+				</a>
+			</div>
+			
+			<!--搜索-->
+			<div class="nav_search">
+				<form>
+					<input class="in_text" type="text"/>
+					<input class="in_btn" type="submit" value=""/>
+				</form>
+			</div>
+			
+		</div>
+		
+		
+		<!--右边主内容-->
+		<div class="r_content new_khmb yulan_mb clearfix">
+			<form>
+				<div class="form_div clearfix">
+					<h1>技术部的OKR</h1>
+					<dl class="clearfix">
+						<dt>适用对象：</dt>
+						<dd class="bumen_dd">
+							<ol class="sydx_ol">
+								<li>刘碧辉</li>
+								<li>李想</li>
+								<li>刘碧辉</li>
+								<li>李想</li>
+							</ol>
+							
+						</dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>考核方式：</dt>
+						<dd>
+							<ol class="khfs_ol">
+								<li>OKR</li>
+							</ol>
+						</dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>考核流程：</dt>
+						<dd>
+							<ul class="pfr_ul clearfix">
+								<li><span>自评</span></li>
+								<li><span>陈志超</span></li>
+								<li><span>张泽群</span></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>权重计算比例：</dt>
+						<dd>
+							<ul class="jisuan_ul">
+								<li><span>自评</span><input type="text" onkeyup="in_keyup(this)" value="80"><i>%</i></li>
+								<li><span>陈志超</span><input type="text" onkeyup="in_keyup(this)" value="10"><i>%</i></li>
+								<li><span>张泽群</span><input type="text" onkeyup="in_keyup(this)" value="10"><i>%</i></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>加分项：</dt>
+						<dd class="jfx">
+							<textarea placeholder="请填写加分理由"></textarea>
+						</dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>留言板：</dt>
+						<dd class="lyb">
+							<textarea placeholder="请填写加分理由"></textarea>
+						</dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>上传图片功能：</dt>
+						<dd>
+							<!--<div class="file_in clearfix">
+								<input type="file" />
+							</div>
+							<div class="file_img clearfix">
+								<img src="" alt=""/>
+							</div>-->
+							
+							<div class="flie_div clearfix">
+								<ol class="file_ol clearfix">
+								
+								</ol>
+								<ul class="file_ul clearfix">
+									<li>
+										<input class="file_in"  onchange="getphoto(this)" type="file" />
+									</li>
+								</ul>
+							</div>
+							
+						</dd>
+					</dl>
+				</div>
+			
+				<!--考核内容-->			
+				<div class="khnr_div kaoshi_div clearfix">
+					<h2>考核内容：</h2>
+					<div class="danxuan cs_tm clearfix">
+						<div class="timu clearfix">
+							<span class="index_span"><em>2</em>.</span>					
+							<p class="timu_p">1231danxsd</p>
+							<p class="beizhu_p">123</p>
+							<div class="tips_tm">
+								<p class="tmfz_p">分值：<em>1</em></p>
+								<p class="tmqz_p">权重：<em>2</em>%</p>
+							</div>
+						</div>
+						<div class="radio clearfix">
+						<label class="clearfix" for=""><input class="in_dx" type="radio" name="dx"><p>选项4</p></label><label class="clearfix" for=""><input class="in_dx" type="radio" name="dx"><p>选项1</p></label></div>	
+					</div>
+					<div class="duoxuan cs_tm clearfix">
+						<div class="timu clearfix">
+							<span class="index_span"><em>3</em>.</span>					
+							<p class="timu_p">123123打得as</p>
+							<p class="beizhu_p">21</p>
+							<div class="tips_tm">
+								<p class="tmfz_p">分值：<em>2</em></p>
+								<p class="tmqz_p">权重：<em>32</em>%</p>
+							</div>
+						</div>
+						<div class="radio clearfix">
+						<label class="clearfix" for=""><i class="in_fx"></i><p>选项1</p></label><label class="clearfix" for=""><i class="in_fx"></i><p>选项2</p></label><label class="clearfix" for=""><i class="in_fx"></i><p>23</p></label><label class="clearfix" for=""><i class="in_fx"></i><p>42</p></label></div>	
+					</div>
+					<div class="tiankong cs_tm clearfix">
+						<div class="timu clearfix">
+							<span class="index_span"><em>4</em>.</span>					
+							<p class="timu_p">阿萨德的说法和东方红肯定是圣诞节开发后的实际开发好的设计费撒（<span class="kh_span" contenteditable="true"></span>）sadhask（<span class="kh_span" contenteditable="true"></span>）sad</p>
+							<p class="beizhu_p">213</p>
+							<div class="tips_tm">
+								<p class="tmfz_p">分值：<em>11</em></p>
+								<p class="tmqz_p">权重：<em>12</em>%</p>
+							</div>
+						</div>
+					</div>
+					<div class="duohang cs_tm clearfix">
+						<div class="timu clearfix">
+							<span class="index_span"><em>1</em>.</span>					
+							<pre><p class="timu_p">asdasd晴儿无群若群气温气温</p></pre>
+							<p class="beizhu_p">请问</p>
+							<div class="tips_tm">
+								<p class="tmfz_p">分值：<em>12</em></p>
+								<p class="tmqz_p">权重：<em>21</em>%</p>
+							</div>
+							<textarea class="outtext_p"></textarea>
+						</div>
+					</div>
+				<input class="in_sub" type="submit" value="保存">
+				</div>
+				
+			</form>
+			
+		</div>
+		
+	<div class="modal modal_img clearfix">
+		<img class="div_img" src="" alt="" />
+	</div>	
+		
+	</body>
+</html>
+<script>
+	$(function(){
+		$(".radio>label").click(function(){
+			$(this).toggleClass("active");
+		})
+		
+		
+		//点击查看上传图片的大图
+//		$(".file_img").click(function(){
+//			$(".modal_img").fadeIn();
+//			$("body").css("overflow","hidden");
+//			$(".modal_img img").attr("src",$(this).find("img").attr("src"));
+//		})
+		$(".modal_img").click(function(e){
+			var close = $('.modal_img img'); 
+		   	if(!close.is(e.target) && close.has(e.target).length === 0){
+				$(".modal_img").fadeOut();
+				$("body").css("overflow","");
+			}
+		})
+	})
+	
+    //调取上传框
+    function getphoto(node) {
+    	if($(".file_ol>li").length<5){
+    		if($(window).width()<=920){
+    			$(".file_ul").css("margin-left",20+"px");
+    		}
+	        var imgURL = "";
+	        try{
+	            var file = null;
+	            if(node.files && node.files[0] ){
+	                file = node.files[0];
+	            }else if(node.files && node.files.item(0)) {
+	                file = node.files.item(0);
+	            }
+	            try{
+	                imgURL =  file.getAsDataURL();
+	            }catch(e){
+	                imgRUL = window.URL.createObjectURL(file);
+	            }
+	        }catch(e){
+	            if (node.files && node.files[0]) {
+	                var reader = new FileReader();
+	                reader.onload = function (e) {
+	                    imgURL = e.target.result;
+	                };
+	                reader.readAsDataURL(node.files[0]);
+	            }
+	        }
+	        var li_text = '<li><div class="close" onclick="det($(this))"></div><img onclick="big_img($(this))" src="'+imgRUL+'"/></li>'
+	        var sw_text = '<div class="swiper-slide"><img src="'+imgRUL+'"/></div>'
+	        $(".file_ol").append(li_text);
+	    }
+    }
+    function big_img(obj){
+    	$(".modal_img").fadeIn();
+		$("body").css("overflow","hidden");
+		$(".modal_img img").attr("src",obj.attr("src"));
+    }
+    function det(obj){
+    	obj.parent().remove();
+    }
+//  $(".file_in input").change(function(){   
+//	 	var file = this.files[0];
+//	    if(window.FileReader){    
+//			var reader = new FileReader();    
+//			reader.readAsDataURL(file);    
+//			reader.onloadend = function (e) {
+//				$(".file_img img").attr("src",e.target.result);    
+//			};    
+//	    } 
+//	});
+	 
+    
+</script>

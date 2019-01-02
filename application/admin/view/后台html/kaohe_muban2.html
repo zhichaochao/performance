@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit">
+		<title>新增考核模板</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/commons.js" ></script>
+	</head>
+	<body class="hei">
+		
+		<!--左边导航-->
+		<div class="lf_nav">
+			<div class="top">
+				<a href="###">
+					<img class="logo1" src="img/png/logo1.png"/>
+					<img class="logo2" src="img/png/logo2.png"/>
+				</a>
+			</div>
+			
+			<ul class="lf_ul clearfix">
+				<li class="active">
+					<a href="###">
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>考核待办</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>考核模板</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>目标管理</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>考核结果</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>团队管理</span>
+					</a>
+				</li>
+				<li>
+					<a href="###">
+						<span>企业设置</span>
+					</a>
+				</li>
+			</ul>
+			
+		</div>
+		
+		
+		<!--上导航-->
+		<div class="top_nav clearfix">
+			
+			<!--个人中心、头像-->
+			<div class="head_img">
+				<a href="###">
+					<span></span>
+					<i>
+						<img src="img/heda_img.jpg" alt="" />
+					</i>
+				</a>
+			</div>
+			
+			<!--消息提醒-->
+			<div class="message">
+				<a href="###">
+					<i class="active"></i>
+				</a>
+			</div>
+			
+			<!--搜索-->
+			<div class="nav_search">
+				<form>
+					<input class="in_text" type="text"/>
+					<input class="in_btn" type="submit" value=""/>
+				</form>
+			</div>
+			
+		</div>
+		
+		
+		<!--右边主内容-->
+		<div class="r_content new_khmb clearfix">
+			<form>
+				<div class="form_div clearfix">
+					<h1>新增考核模板</h1>
+					<dl class="clearfix">
+						<dt>模板名称：</dt>
+						<dd><input type="text" placeholder="技术部的OKR" /></dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>适用对象：</dt>
+						<dd class="bumen_dd">
+							<div class="select_down clearfix">
+								<button class="select_btn" type="button">选择成员</button>
+							</div>
+							<!--<select class="bumen_sl" name="">
+								<option value="">选择适用对象（可多选）</option>
+								<option value="">全力以赴</option>
+								<option value="">勇往直前</option>
+								<option value="">技术部</option>
+							</select>-->
+						</dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>考核方式：</dt>
+						<dd>
+							<ul class="kefs_ul">
+								<li class="active"><span>KPI</span></li>
+								<li><span>OKR</span></li>
+								<li><span>MBO</span></li>
+								<li><span>BSC</span></li>
+								<li><span>KSF</span></li>
+								<li><span>360度评价</span></li>
+								<li><span>超越标杆</span></li>
+							</ul>
+							<!--<button>+新增考核方式</button>-->
+						</dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>设置加分项：</dt>
+						<dd>
+							<ul class="dx_ul">
+								<li class="active"><span>是</span></li>
+								<li><span>否</span></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>设置留言板：</dt>
+						<dd>
+							<ul class="dx_ul">
+								<li class="active"><span>是</span></li>
+								<li><span>否</span></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>设置上传图片功能：</dt>
+						<dd>
+							<ul class="dx_ul">
+								<li class="active"><span>是</span></li>
+								<li><span>否</span></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>设置考核流程：</dt>
+						<dd>
+							<ul class="pfr_ul clearfix">
+							</ul>
+							<button class="add_pfr" type="button">+添加评论人</button>
+						</dd>
+					</dl>
+					<dl class="clearfix">
+						<dt>设置权重计算比例：</dt>
+						<dd>
+							<ul class="jisuan_ul">
+							</ul>
+						</dd>
+					</dl>
+					<input class="in_sub" type="submit" value="保存"/>
+				</div>
+			</form>
+			
+		</div>
+		
+		
+		
+		
+	</body>
+</html>
+<script>
+	$(function(){
+		//	调用员工下拉选择	
+		$(".select_down .select_ol>li").click(function(){
+			const this_val = $(this).find("em").text();
+			const texts = '<span class="bumen_sp">'+this_val+' <i class="del"></i></span>';
+			$(".bumen_dd").append(texts);
+		})
+		$(".select_down .select_ul>li").click(function(e){
+			const texts = '<span class="bumen_sp">'+$(this).text()+' <i class="del"></i></span>';
+			$(".bumen_dd").append(texts);
+			e.stopPropagation();
+		})
+		$(".bumen_dd").delegate("i.del","click",function(){
+			$(this).parent().remove();
+		})
+		//设置多选
+		$(".kefs_ul>li").click(function(){
+			$(this).toggleClass("active");
+		})
+		//设置单选
+		$(".dx_ul>li").click(function(){
+			$(this).addClass("active").siblings("li").removeClass("active");
+		})
+		
+		//设置考核流程
+		$(".pfr_ul").delegate(">li>span","dblclick",function(){
+			$(this).attr("contenteditable","true");
+		})
+		$(".pfr_ul").delegate(">li>span","blur",function(){
+			$(this).removeAttr("contenteditable");
+			$(".jisuan_ul>li").eq($(this).parents("li").index()).find("span").text($(this).text());
+		})
+		
+		$(".add_pfr").click(function(){
+			const li_text = '<li><span>评分人</span><div class="del"></del></li>';
+			const li_texts = 
+					'<li><span>评分人</span>'+
+					'<input type="text" onkeyup="in_keyup(this)" placeholder="权重" />'+
+					'<i>%</i></li>'
+
+			
+			$(".pfr_ul").append(li_text);
+			$(".jisuan_ul").append(li_texts);
+		})
+		//删除
+		$(".pfr_ul ").delegate(".del","click",function(){
+			var this_index = $(this).parents("li").index();
+			$(this).parents("li").remove();
+			$(".jisuan_ul>li").eq(this_index).remove();
+		})
+		
+	})
+	//input 只能输入数字小数点
+	function in_keyup(obj){
+		var str = obj.value.replace(/[^0-9/.]/g,'');;
+        var len1 = str.substr(0, 1);
+        var len2 = str.substr(1, 1);
+        //如果第一位是0，第二位不是点，就用数字把点替换掉
+	      if (str.length > 1 && len1 == 0 && len2 != ".") {
+	        str = str.substr(1, 1);
+	      }
+        //第一位不能是.
+	      if (len1 == ".") {str = "";}
+        //限制只能输入一个小数点
+	      if (str.indexOf(".") != -1) {
+	        var str_ = str.substr(str.indexOf(".") + 1);
+	        if (str_.indexOf(".") != -1) {
+	          str = str.substr(0, str.indexOf(".") + str_.indexOf(".") + 1);
+	        }
+	      }
+	    //限制输入的数字小于100
+	      if(str>100){str = str.substr(0,str.length-1);}
+        //正则替换，保留数字和小数点
+      	obj.value = str.replace(/[^\d^\.]+/g,'')
+	}
+    	
+select_down();
+</script>
