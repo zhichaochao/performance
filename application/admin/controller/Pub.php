@@ -81,7 +81,8 @@ class Pub
      */
     public function loginFrame()
     {
-        return $this->view->fetch();
+          $this->redirect('Index/index');
+        // return $this->view->fetch();
     }
 
     /**

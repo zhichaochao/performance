@@ -131,3 +131,40 @@ function select_down(){
 }	
 	
 	
+
+function loadhtml(href) {
+	     $.ajax({
+            url:href,
+              success: function(data){
+               $('#content').html(data);
+              }
+
+    		});
+}
+function loadnav(href) {
+	     $.ajax({
+            url:href,
+              success: function(data){
+              	if (data.code==0) {
+	              	data= data.msg;
+	              	var nav='';
+	              	if (data) {
+	              		for (var i = 0; i< data.length; i++) {
+
+	              			var hrefk="loadhtml('"+data[i].href+"');";
+
+	              			if (i==0) {
+	              			nav+='<a class="nav_a active" onclick="'+hrefk+'">'+data[i].name+'</a>';
+	              			}else{
+	              				nav+='<a class="nav_a " onclick="'+hrefk+'">'+data[i].name+'</a>';
+	              			}
+	              		}
+	              		 $('#nav').html(nav);
+	              	}else{
+	              		 $('#nav').html('');
+	              	}
+	              }
+	          	}
+
+    		});
+}

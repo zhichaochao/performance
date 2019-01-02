@@ -26,9 +26,11 @@ class Index extends Controller
     {
         // 读取数据库模块列表生成菜单项
         $nodes = Loader::model('AdminNode', 'logic')->getMenu();
+        // print_r( $nodes );exit();
 
         // 节点转为树
         $tree_node = list_to_tree($nodes);
+        // print_r(   $tree_node);exit();
 
         // 显示菜单项
         $menu = [];
@@ -44,6 +46,7 @@ class Index extends Controller
                 }
             }
         }
+        // print_r($menu );exit();
 
         // 获取授权节点分组信息
         $groups_id = array_unique($groups_id);
@@ -54,6 +57,7 @@ class Index extends Controller
 
         $this->view->assign('groups', $groups);
         $this->view->assign('menu', $menu);
+        // print_r(  $this->view->assign('menu', $menu));exit();
 
         return $this->view->fetch();
     }
@@ -85,4 +89,20 @@ class Index extends Controller
 
         return $this->view->fetch();
     }
+
+
+    /**
+     * 本页面的导航
+     * @return mixed
+     */
+    public function nav()
+    {
+        $nav =array();
+        // $nav[]=array(
+        //     'name'=>'考核',
+        //     'href'=>url("index/welcome"),
+        // );
+
+         return ajax_return_adv($nav);
+      }
 }

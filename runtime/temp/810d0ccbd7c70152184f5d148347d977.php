@@ -1,289 +1,397 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:79:"D:\phpStudy\WWW\performance\public/../application/admin\view\index\welcome.html";i:1546397532;s:79:"D:\phpStudy\WWW\performance\public/../application/admin\view\template\base.html";i:1546397532;s:90:"D:\phpStudy\WWW\performance\public/../application/admin\view\template\javascript_vars.html";i:1546397532;}*/ ?>
-﻿<!DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="renderer" content="webkit|ie-comp|ie-stand">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport"
-          content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
-    <meta http-equiv="Cache-Control" content="no-siteapp"/>
-    <title>我的桌面</title>
-    <link rel="Bookmark" href="__ROOT__/favicon.ico" >
-    <link rel="Shortcut Icon" href="__ROOT__/favicon.ico" />
-    <!--[if lt IE 9]>
-    <script type="text/javascript" src="__LIB__/html5.js"></script>
-    <script type="text/javascript" src="__LIB__/respond.min.js"></script>
-    <script type="text/javascript" src="__LIB__/PIE_IE678.js"></script>
-    <![endif]-->
-    <link rel="stylesheet" type="text/css" href="__STATIC__/h-ui/css/H-ui.min.css"/>
-    <link rel="stylesheet" type="text/css" href="__STATIC__/h-ui.admin/css/H-ui.admin.css"/>
-    <link rel="stylesheet" type="text/css" href="__LIB__/Hui-iconfont/1.0.7/iconfont.css"/>
-    <link rel="stylesheet" type="text/css" href="__LIB__/icheck/icheck.css"/>
-    <link rel="stylesheet" type="text/css" href="__STATIC__/h-ui.admin/skin/default/skin.css" id="skin"/>
-    <link rel="stylesheet" type="text/css" href="__STATIC__/h-ui.admin/css/style.css"/>
-    <link rel="stylesheet" type="text/css" href="__STATIC__/css/app.css"/>
-    <link rel="stylesheet" type="text/css" href="__LIB__/icheck/icheck.css"/>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"D:\phpStudy\WWW\performance\public/../application/admin\view\index\welcome.html";i:1546415318;}*/ ?>
+﻿ <!--右边主内容-->
+        <div class="r_content clearfix">
+            
+            <ul class="in_ul">
+                <li>
+                    <a href="###">
+                        <img src="__STATIC__/img/png/icon_4.png"/>
+                        <span class="span1">考核待办</span>
+                        <p class="p1"><em>45</em>份考核等待办理</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="__STATIC__/img/png/icon_5.png"/>
+                        <span class="span1">组织架构</span>
+                        <p class="p1">系统共有56个成员</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <div class="jx_li">
+                            <p class="p2">10月份绩效</p>
+                            <p class="p3">
+                                <span class="fen">92</span>/<em>100</em>
+                            </p>
+                            
+                            <div class="circle">
+                                <p class="can">
+                                    <span class="can_fen">92</span>
+                                    <em>分</em>
+                                </p>
+                                <canvas id="canvas_1" width="120" height="120"></canvas>
+                                <canvas id="canvas_2" width="120" height="120"></canvas>
+                            </div>
+                            <p class="pingyu"></p>
+                            <span class="yuan1"></span>
+                            <span class="yuan2"></span>
+                        </div>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/png/icon_6.png"/>
+                        <span class="span1">团队目标</span>
+                        <p class="p1">本月团队目标还未设置</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/png/icon_7.png"/>
+                        <span class="span1">绩效自评</span>
+                        <p class="p1">每月1-5号开放自评通道</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/png/icon_8.png"/>
+                        <span class="span1">创建目标</span>
+                        <p class="p1">本月目标还未提交</p>
+                    </a>
+                </li>
+            </ul>
+            
+            <!--团队绩效排行榜-->
+            <div class="tuxin clearfix">
+                <form action="">
+                    <p class="p1">10月团队绩效均分排行榜</p>
+                    <div class="label ny_label">
+                        <input class="in_sub" type="submit" value="搜索:" />
+                        <input class="in_text" type="text" placeholder="2018-11" />
+                        <div class="time_ny">
+                            <div class="top clearfix">
+                                <span class="sp sp_lf"></span>
+                                <input class="ny_in"  onkeyup="this.value=this.value.replace(/\D/g,'')" type="text" value="0000" />
+                                <span class="sp sp_rf"></span>
+                            </div>
+                            <div class="bot clearfix">
+                                <ul class="ul_ny clearfix">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <p class="p2">第一名：乐米 <span>95.8分</span></p>
+                <div id="container" class="tuxin_div"></div>
+            </div>
+            
+            <!--日历-->
+            <div class="rili clearfix">
+                <div class="top clearfix">
+                    <span class="n_y">
+                        <i class="n">0000</i>-<i class="y">00</i>
+                    </span>
+                    <span class="day_active">回到今天</span>
+                    
+                    <span class="sp sp_rf"></span>
+                    <span class="sp sp_lf"></span>
+                </div>
+                <div class="bot clearfix">
+                    <ol class="rl_ol clearfix">
+                        <li>SU</li>
+                        <li>MO</li>
+                        <li>TU</li>
+                        <li>WE</li>
+                        <li>TH</li>
+                        <li>FR</li>
+                        <li>SA</li>
+                    </ol>
+                    
+                    <ul class="rl_ul clearfix">
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+
+        <script>
+    window.onload = function(){
     
-    <!--[if IE 6]>
-    <script type="text/javascript" src="__LIB__/DD_belatedPNG_0.0.8a-min.js"></script>
-    <script>DD_belatedPNG.fix('*');</script>
-    <![endif]-->
-    <!--定义JavaScript常量-->
-<script>
-    window.THINK_ROOT = '<?php echo \think\Request::instance()->root(); ?>';
-    window.THINK_MODULE = '<?php echo \think\Url::build("/" . \think\Request::instance()->module(), "", false); ?>';
-    window.THINK_CONTROLLER = '<?php echo \think\Url::build("___", "", false); ?>'.replace('/___', '');
+        function inte(percent) {
+            var canvas_1 = document.querySelector('#canvas_1');
+            var canvas_2 = document.querySelector('#canvas_2');
+            var ctx_1 = canvas_1.getContext('2d');
+            var ctx_2 = canvas_2.getContext('2d');
+            //画底部的灰色圆环
+            ctx_1.lineWidth = 6;
+            ctx_1.strokeStyle = "#e5daff";
+            ctx_1.beginPath();
+            ctx_1.arc(canvas_1.width / 2, canvas_1.height / 2, canvas_1.width / 2 - ctx_1.lineWidth / 2, 0, Math.PI * 2, false);
+            ctx_1.closePath();
+            ctx_1.stroke();
+            ctx_2.lineWidth = 6;
+            ctx_2.strokeStyle = "#ba9bff";
+            var angle = 0;
+            var timer;
+            (function draw() {
+                timer = requestAnimationFrame(draw);
+                //百分比圆环
+                ctx_2.clearRect(0, 0, canvas_2.width, canvas_2.height)
+                ctx_2.beginPath();
+                ctx_2.arc(canvas_2.width / 2, canvas_2.height / 2, canvas_2.width / 2 - ctx_2.lineWidth / 2, 0, angle * Math.PI / 180, false);
+                angle = angle+5;
+                var percentAge = parseInt((angle / 360) * 100)
+                if (angle > (percent / 100 * 360)) {
+                    percentAge = percent
+                    window.cancelAnimationFrame(timer);
+                };
+                ctx_2.stroke();
+                ctx_2.closePath();
+                ctx_2.save();
+                ctx_2.beginPath();
+                ctx_2.rotate(90 * Math.PI / 180)
+                ctx_2.closePath();
+                ctx_2.restore();
+            })()
+        }
+        
+        let fen = parseInt($(".fen").text());
+        if(fen>=90){
+            $(".pingyu").text("真棒");
+        }else if(fen>=70 && fen<90){
+            $(".pingyu").text("不错");
+        }else{
+            $(".pingyu").text("加油");
+        }
+        
+        inte(fen);
+        
+        
+        
+        function timer(fen){
+            let i = 0;
+            setInterval(function(){
+                i= i + 3;
+                if(i>=fen){
+                    i=fen;
+                    $(".fen").text(i);
+                    $(".can_fen").text(i);
+                    return;
+                }
+                $(".fen").text(i);
+                $(".can_fen").text(i);
+            },50)
+        }
+        timer(fen)
+        
+    }
+    
+    </script>
+    
+<script type="text/javascript" src="__STATIC__/js/echarts.min.js"></script>
+<script type="text/javascript">
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+var dataAxis = ['总经理', '财务', '人事', '采购', '储运', '技术', '全*赴', '勇*前', '乐米', '思创', '尼佳'];
+var data = [66, 88, 69, 65, 88, 92, 63, 92, 95.8, 92, 90];
+var dataAxis ;
+var yMax = 100;
+var dataShadow = [];
+
+for (var i = 0; i < data.length; i++) {
+    dataShadow.push(yMax);
+}
+
+option = {
+   
+    xAxis: {
+        data: dataAxis,
+        axisLabel: {
+            textStyle: {
+                color: '#999'
+            }
+            
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: false
+        },
+        
+    },
+    yAxis: {
+        splitLine: {
+            show: true,
+            lineStyle:{
+                type:'dotted',
+                color:'#eee'
+            }
+            
+        },
+        axisLine: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLabel: {
+            textStyle: {
+                color: '#999'
+            }
+        },
+    },
+    grid: {
+        left: '0%',
+        right: '0%',
+        bottom: '0%',
+        containLabel: true
+    },
+    series: [
+        { 
+            type: 'bar',
+            itemStyle: {
+                normal: {color: 'rgba(0,0,0,0)'}
+            },
+            barGap:'-100%',
+            barCategoryGap:'70%',
+            data: dataShadow,
+            animation: false
+        },
+        {
+            type: 'bar',
+            itemStyle: {
+                normal: {
+                    barBorderRadius: [25, 25, 0, 0],
+                    color: new echarts.graphic.LinearGradient(
+                        0, 0, 0, 1,
+                        [
+                            {offset: 0, color: '#ece9fe'},
+                            {offset: 0.1, color: '#ece9fe'},
+                            {offset: 1, color: '#ece9fe'}
+                        ]
+                    )
+                },
+                emphasis: {
+//                  barBorderRadius: 7,
+                    color: new echarts.graphic.LinearGradient(
+                        0, 0, 0, 1,
+                        [
+                            {offset: 0, color: '#9a55fe'},
+                            {offset: 0.1, color: '#9a55fe'},
+                            {offset: 1, color: '#773eff'}
+                        ]
+                    )
+                }
+            },
+            label: {
+                normal: {
+                    show: true,
+                    position: 'top',
+                    color: '#ece9fe'
+                },
+                emphasis: {
+                    show: true,
+                    position: 'top',
+                    color: '#7b41ff'
+                } 
+            },
+            data: data
+        }
+    ]
+};
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}   
 </script>
-</head>
-<body>
 
-<nav class="breadcrumb">
-    <div id="nav-title"></div>
-    <a class="btn btn-success radius r btn-refresh" style="line-height:1.6em;margin-top:3px" href="javascript:;" title="刷新"><i class="Hui-iconfont"></i></a>
-</nav>
+ <script type="text/javascript">
+         
+     var nowDate=new Date();
+     var inputYear=nowDate.getFullYear();
+     var inputMonth=nowDate.getMonth();
+     var date=nowDate.getDate();
+     $(".ny_label .in_text").attr("placeholder",inputYear.toString()+"-"+(inputMonth+1).toString()) 
+         
+    function rili(nian,yue){
+         inputYear = nian;
+         inputMonth = yue;
+         
+         var newDate=new Date(inputYear,inputMonth,1);
+         var week=newDate.getDay();
+         var howManyDay=new Date(inputYear,inputMonth+1,0).getDate();
+         var lastDays=new Date(inputYear,inputMonth,0).getDate();
+         
+         $(".n_y .n").text(inputYear);
+         if((inputMonth+1).toString().length<2){
+//          inputMonth = inputMonth + 1;
+            inputMonth = "0"+(inputMonth+1).toString();
+            $(".n_y .y").text(inputMonth);
+         }else{
+            $(".n_y .y").text(inputMonth + 1);
+         }
+         
+         var calendar="";
+         $(".rl_ul").html('');
+         for(var i=lastDays-week+1,j=0;i<=lastDays;i++){
+             let li_text = '<li><span class="hui">'+i+'</span></li>';
+             $(".rl_ul").append(li_text);
+         }
+         var nums="";
+             for(var i=1;i<=howManyDay;i++){
+               if(i==date){
+                 if(inputMonth == nowDate.getMonth()){
+                    let li_text = '<li><span class="active">'+i+'</span></li>';
+                    $(".rl_ul").append(li_text);
+                 }else{
+                    let li_text = '<li><span>'+i+'</span></li>';
+                    $(".rl_ul").append(li_text);
+                 }
+               }else {
+                 let li_text = '<li><span>'+i+'</span></li>';
+                 $(".rl_ul").append(li_text);
+               }
+               
+         }
+    }
+    rili(inputYear,inputMonth);
+    
+    //上一月
+    $(".rili .sp_lf").click(function(){
+        let nian = $(".n_y .n").text();
+        let yue = $(".n_y .y").text();
+        if(yue==1){
+            nian--;
+            yue=13;
+        }
+        yue = yue -2;
+        rili(nian,yue);
+    })
+    //下一月
+    $(".rili .sp_rf").click(function(){
+        let nian = $(".n_y .n").text();
+        let yue = $(".n_y .y").text();
+        console.log(yue)
+        if(yue==12){
+            nian++;
+            yue=0;
+        }
+        yue = yue++;
+        rili(nian,yue);
+    })
+    //回到今天
+    $(".rili .day_active").click(function(){
+        let nian = nowDate.getFullYear();
+        let yue = nowDate.getMonth();
+        rili(nian,yue);
+    })
+    
+    
+  </script>
 
-
-<div class="page-container">
-    <p class="f-20 text-success">欢迎使用 <?php echo \think\Config::get('site.name'); ?> <span class="f-14"><?php echo \think\Config::get('site.version'); ?></span> 后台管理系统！</p>
-    <p>登录次数：<?php echo $info['login_count']; ?> </p>
-    <?php if(session('last_login_time')): ?>
-    <p>上次登录IP：<?php echo $last_login_ip; ?> &nbsp;&nbsp;&nbsp; 上次登录时间：<?php echo date('Y-m-d H:i:s',\think\Session::get('last_login_time')); ?> &nbsp;&nbsp;&nbsp; 上次登录地点：<?php echo $last_login_loc; ?></p>
-    <?php endif; ?>
-    <p>本次登录IP：<?php echo $current_login_ip; ?> &nbsp;&nbsp;&nbsp; 本次登录时间：<?php echo date('Y-m-d H:i:s',$info['last_login_time']); ?> &nbsp;&nbsp;&nbsp; 本次登录地点：<?php echo $current_login_loc; ?></p>
-    <div class="view-body think-editor-content">
-
-        <h2>官方文档</h2>
-
-        <p><a target="_blank" class="c-blue" href="http://doc.tpadmin.yuan1994.com">http://doc.tpadmin.yuan1994.com</a></p>
-
-        <p class="c-red">tpadmin 官方交流群：518162472</p>
-
-        <h2>仓库地址</h2>
-
-        <p class="c-red">如果觉得不错就到 github 给个星哦</p>
-
-        <p><a target="_blank" class="c-blue" href="https://github.com/yuan1994/tpadmin">https://github.com/yuan1994/tpadmin</a></p>
-
-        <h2>使用方法</h2>
-
-        <h3 id="composer-">composer安装：</h3>
-
-        <p>composer create-project yuan1994/tpadmin tpadmin  --prefer-dist</p>
-
-        <h3 id="git-">git克隆：</h3>
-
-        <p>git clone https://github.com/yuan1994/tpadmin</p>
-
-        <h3 id="-">直接下载：</h3>
-
-        <p><a target="_blank" class="c-blue" href="https://github.com/yuan1994/tpadmin/archive/master.zip">https://github.com/yuan1994/tpadmin/archive/master.zip</a></p>
-
-        <blockquote class="info">
-            <p>框架的依赖需要通过 composer 下载，请在框架根目录执行 composer install ，已确保依赖的类库能下载下来</p>
-        </blockquote>
-
-        <h2>部署</h2>
-
-        <p>参考 <a target="_blank" class="c-blue" href="http://www.kancloud.cn/manual/thinkphp5/129745">ThinkPHP5 - 部署</a></p>
-
-        <p>部署成功后，建立新建数据库 tpadmin，导入项目根目录的 tpadmin.sql 文件，默认管理员帐号：admin，默认管理员密码：123456，然后访问 http://your-tpadmin-root-domain/admin</p>
-
-        <h2>开发规范</h2>
-
-        <p>请参考ThinkPHP5官方开发规范 <a href="http://www.kancloud.cn/manual/thinkphp5/118007">ThinkPHP5 - 开发规范</a></p>
-
-        <h2>注意</h2>
-
-        <p>为了确保代码自动生成可用，请在Linux/MacOS系统上使用项目时保证application文件夹有可写权限，本地开发可用将文件夹的权限改为777，线上部署请注意修改成安全的权限，为了更好的使用代码自动生成，请最好在Linux/MacOS系统上把Apache或php-fpm的用户修改为当前用户然后重启，可以避免权限问题</p>
-
-        <h2>推荐</h2>
-
-        <p>强烈推荐使用 tp-mailer 扩展类发送邮件，基于强大的 swiftmailer 开发，安装、使用非常简单，代码非常优美简便，详情请见 <a class="c-blue" href="https://github.com/yuan1994/tp-mailer" target="_blank">https://github.com/yuan1994/tp-mailer</a></p>
-
-        <p>一款支持所有PHP框架的优美的邮件发送类，ThinkPHP系列框架开箱即用，其他框架初始化配置即可使用</p>
-
-        <p>基于 SwiftMailer 二次开发, 为 ThinkPHP系列框架量身定制, 使 ThinkPHP 支持邮件模板、纯文本、附件邮件发送以及更多邮件功能, 邮件发送简单到只需一行代码</p>
-
-        <p>同时了方便其他框架或者非框架使用, Tp Mailer也非常容易拓展融合到其他框架中, 欢迎大家 Fork 和 Star, 提交代码让Tp Mailer支持更多框架</p>
-    </div>
-
-    <p class="c-red">以下为静态展示内容</p>
-    <table class="table table-border table-bordered table-bg">
-        <thead>
-        <tr>
-            <th colspan="7" scope="col">信息统计</th>
-        </tr>
-        <tr class="text-c">
-            <th>统计</th>
-            <th>资讯库</th>
-            <th>图片库</th>
-            <th>产品库</th>
-            <th>用户</th>
-            <th>管理员</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="text-c">
-            <td>总数</td>
-            <td>92</td>
-            <td>9</td>
-            <td>0</td>
-            <td>8</td>
-            <td>20</td>
-        </tr>
-        <tr class="text-c">
-            <td>今日</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr class="text-c">
-            <td>昨日</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr class="text-c">
-            <td>本周</td>
-            <td>2</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr class="text-c">
-            <td>本月</td>
-            <td>2</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        </tbody>
-    </table>
-    <table class="table table-border table-bordered table-bg mt-20">
-        <thead>
-        <tr>
-            <th colspan="2" scope="col">服务器信息</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th width="30%">服务器计算机名</th>
-            <td><span id="lbServerName">http://127.0.0.1/</span></td>
-        </tr>
-        <tr>
-            <td>服务器IP地址</td>
-            <td>192.168.1.1</td>
-        </tr>
-        <tr>
-            <td>服务器域名</td>
-            <td>www.h-ui.net</td>
-        </tr>
-        <tr>
-            <td>服务器端口</td>
-            <td>80</td>
-        </tr>
-        <tr>
-            <td>服务器IIS版本</td>
-            <td>Microsoft-IIS/6.0</td>
-        </tr>
-        <tr>
-            <td>本文件所在文件夹</td>
-            <td>D:\WebSite\HanXiPuTai.com\XinYiCMS.Web\</td>
-        </tr>
-        <tr>
-            <td>服务器操作系统</td>
-            <td>Microsoft Windows NT 5.2.3790 Service Pack 2</td>
-        </tr>
-        <tr>
-            <td>系统所在文件夹</td>
-            <td>C:\WINDOWS\system32</td>
-        </tr>
-        <tr>
-            <td>服务器脚本超时时间</td>
-            <td>30000秒</td>
-        </tr>
-        <tr>
-            <td>服务器的语言种类</td>
-            <td>Chinese (People's Republic of China)</td>
-        </tr>
-        <tr>
-            <td>.NET Framework 版本</td>
-            <td>2.050727.3655</td>
-        </tr>
-        <tr>
-            <td>服务器当前时间</td>
-            <td>2014-6-14 12:06:23</td>
-        </tr>
-        <tr>
-            <td>服务器IE版本</td>
-            <td>6.0000</td>
-        </tr>
-        <tr>
-            <td>服务器上次启动到现在已运行</td>
-            <td>7210分钟</td>
-        </tr>
-        <tr>
-            <td>逻辑驱动器</td>
-            <td>C:\D:\</td>
-        </tr>
-        <tr>
-            <td>CPU 总数</td>
-            <td>4</td>
-        </tr>
-        <tr>
-            <td>CPU 类型</td>
-            <td>x86 Family 6 Model 42 Stepping 1, GenuineIntel</td>
-        </tr>
-        <tr>
-            <td>虚拟内存</td>
-            <td>52480M</td>
-        </tr>
-        <tr>
-            <td>当前程序占用内存</td>
-            <td>3.29M</td>
-        </tr>
-        <tr>
-            <td>Asp.net所占内存</td>
-            <td>51.46M</td>
-        </tr>
-        <tr>
-            <td>当前Session数量</td>
-            <td>8</td>
-        </tr>
-        <tr>
-            <td>当前SessionID</td>
-            <td>gznhpwmp34004345jz2q3l45</td>
-        </tr>
-        <tr>
-            <td>当前系统用户名</td>
-            <td>NETWORK SERVICE</td>
-        </tr>
-        </tbody>
-    </table>
-</div>
-<footer class="footer mt-20">
-    <div class="container">
-        <p></p>
-        <p>
-            感谢jQuery、layer、laypage、Validform、UEditor、My97DatePicker、iconfont、Datatables、WebUploaded、icheck、highcharts、bootstrap-Switch、H-ui、H-ui.admin<br>
-            Copyright &copy;2016 <?php echo \think\Config::get('site.name'); ?> <?php echo \think\Config::get('site.version'); ?> All Rights Reserved.<br>
-            本后台系统由<a href="http://www.h-ui.net/" target="_blank" rel="nofollow" title="H-ui前端框架">H-ui前端框架</a>提供前端技术支持</p>
-    </div>
-</footer>
-
-<script type="text/javascript" src="__LIB__/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="__LIB__/layer/2.4/layer.js"></script>
-<script type="text/javascript" src="__STATIC__/h-ui/js/H-ui.js"></script>
-<script type="text/javascript" src="__STATIC__/h-ui.admin/js/H-ui.admin.js"></script>
-<script type="text/javascript" src="__STATIC__/js/app.js"></script>
-<script type="text/javascript" src="__LIB__/icheck/jquery.icheck.min.js"></script>
-
-</body>
-</html>
