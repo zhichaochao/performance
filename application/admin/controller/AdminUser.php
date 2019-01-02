@@ -83,4 +83,19 @@ class AdminUser extends Controller
         // 禁止禁用 Admin 模块,权限设置节点
         $this->filterId(1, '该用户不能被禁用', '=');
     }
+
+      /**
+     * 本页面的导航
+     * @return mixed
+     */
+    public function nav()
+    {
+        $nav =array();
+        // $nav[]=array(
+        //     'name'=>'考核',
+        //     'href'=>url("index/welcome"),
+        // );
+
+         return ajax_return_adv($nav);
+      }
 }

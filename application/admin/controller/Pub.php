@@ -126,10 +126,13 @@ class Pub
 
             // 使用用户名、密码和状态的方式进行认证
             if (null === $auth_info) {
-                return ajax_return_adv_error('帐号不存在或已禁用！');
+                // return ajax_return_adv_error('帐号不存在或已禁用！');
+                 $this->error('帐号不存在或已禁用！');
+
             } else {
                 if ($auth_info['password'] != password_hash_tp($data['password'])) {
-                    return ajax_return_adv_error('密码错误！');
+                    // return ajax_return_adv_error('密码错误！');
+                      $this->error('密码错误！');
                 }
 
                 // 生成session信息

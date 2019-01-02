@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:77:"D:\phpStudy\WWW\performance\public/../application/admin\view\index\index.html";i:1546415435;s:83:"D:\phpStudy\WWW\performance\public/../application/admin\view\template\nav_left.html";i:1546416964;s:82:"D:\phpStudy\WWW\performance\public/../application/admin\view\template\nav_top.html";i:1546412531;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:77:"D:\phpStudy\WWW\performance\public/../application/admin\view\index\index.html";i:1546415435;s:83:"D:\phpStudy\WWW\performance\public/../application/admin\view\template\nav_left.html";i:1546420213;s:82:"D:\phpStudy\WWW\performance\public/../application/admin\view\template\nav_top.html";i:1546412531;}*/ ?>
 ﻿<!DOCTYPE html>
 <html>
       <head>
@@ -56,7 +56,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="###">
+                    <a data-href="<?php echo \think\Url::build('admin_user/index'); ?>" data-nav="<?php echo \think\Url::build('admin_user/nav'); ?>">
                         <span>企业设置</span>
                     </a>
                 </li>

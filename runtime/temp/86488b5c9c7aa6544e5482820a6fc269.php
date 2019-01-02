@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\phpStudy\WWW\performance\public/../application/admin\view\pub\login.html";i:1546400963;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\phpStudy\WWW\performance\public/../application/admin\view\pub\login.html";i:1546408350;}*/ ?>
 ﻿<!DOCTYPE html>
 <html>
     <head>
