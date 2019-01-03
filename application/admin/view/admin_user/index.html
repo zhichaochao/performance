@@ -186,7 +186,7 @@
                     <div class="sc_div">
                         <ol class="bm_ol" id="if_gdt">
                             <h2>选择部门:</h2>
-                            <li ondrop="drop(event,this)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event, this)">
+                            <!-- <li ondrop="drop(event,this)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event, this)">
                                 <input type="text" value="总经理" disabled="disabled" />
                             </li>
                             <li ondrop="drop(event,this)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event, this)">
@@ -218,14 +218,14 @@
                             </li>
                             <li ondrop="drop(event,this)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event, this)">
                                 <input type="text" value="勇往直前" disabled="disabled" />
-                            </li>
+                            </li> -->
                             <li>
-                                <input class="active" type="text" placeholder="请输入新建部门名称" />
+                                <input class="active" type="text" placeholder="请输入新建部门名称" name="ment" />
                             </li>
                         </ol>
                     </div>
                     
-                    <input class="qd_in" type="submit"  draggable="true" value="确定"/>
+                    <input class="qd_in" type="submit"  draggable="true" value="确定" onclick="cancel_ment();" />
                     <input class="qx_in" type="reset" value="取消"/>
                 </form>
                 
@@ -234,7 +234,20 @@
         </div>
 {/block}
 <script>
+//新建部门
+// $('.qd_in').on('click', function() {
+    // alert(11);
+function cancel_ment(){
+    // alert(href);
+            $.ajax({
+                url:'admin/AdminUser/nav',
+                type:"post",
+                data: $('#if_gdt input[type=\'text\']'),
+                // success:function(){
 
+                // }
+            });
+    }
 
 function loadlist(href) {
          $.ajax({
