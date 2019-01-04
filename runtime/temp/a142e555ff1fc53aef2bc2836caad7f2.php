@@ -1,8 +1,9 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:90:"D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_user\index.html";i:1546572450;}*/ ?>
 
         <!--左边内容导航-->
         <div class="lfnav_text clearfix">
             <button class="edit_btn" type="button">
-                <!-- <span>编辑部门</span> -->
+                <span>编辑部门</span>
             </button>
             <ul id='bu_liist'>
 
@@ -60,7 +61,7 @@
                 <span>导出为Excel</span>
             </div>
             
-            <a class="add_cy clearfix" data-href="{:\\think\\Url::build(\'admin_user/newmembera\')}" data-nav="{:\\think\\Url::build(\'admin_user/nav\')}">+&nbsp;新增成员</a>
+            <a class="add_cy clearfix" data-href="<?php echo \think\Url::build('admin_user/newmembera'); ?>" data-nav="<?php echo \think\Url::build('admin_user/nav'); ?>">+&nbsp;新增成员</a>
             
             
             <div class="bot clearfix">
@@ -153,7 +154,7 @@
                         <td><span>激活</span></td>
                         <td>
                             <button>重置密码</button>
-                            <a class="edit_a"  onclick=" loadhtml('{:\\think\\Url::build(\'admin_user/nav\')}');">修改</a>
+                            <a class="edit_a"  onclick=" loadhtml('<?php echo \think\Url::build('admin_user/nav'); ?>');">修改</a>
                             <button>冻结</button>
                             <button class="del">删除</button>
                         </td>
@@ -242,7 +243,7 @@
     // alert(11);
 function cancel_ment(){
             $.ajax({
-                url:'{:\\think\\Url::build("insertment")}',
+                url:'<?php echo \think\Url::build("insertment"); ?>',
                 type:"post",
                 data: $('#if_gdt input[type=\'text\']'),
                 // success:function(){

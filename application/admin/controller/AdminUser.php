@@ -19,6 +19,7 @@ namespace app\admin\controller;
 use app\admin\Controller;
 use think\Exception;
 use think\Loader;
+use think\Db;
 
 class AdminUser extends Controller
 {
@@ -91,13 +92,71 @@ class AdminUser extends Controller
      */
     public function nav()
     {
-        print_r(12131);exit();
-        $nav =array();
+        // print_r(12131);exit();
+        // $nav =array();
         // $nav[]=array(
         //     'name'=>'考核',
         //     'href'=>url("index/welcome"),
         // );
 
          return ajax_return_adv($nav);
+      }
+      //新增成员
+      public function newmembera()
+      {
+         // $this->redirect('Admin_user/newmembera');
+         return $this->view->fetch();
+      }
+      //添加部门
+      public function insertment()
+      {
+        // print_r(12131);exit;
+        if($this->request->post() && !empty($this->request->post('ment'))){
+            $ment = $this->request->post('ment');
+             // Db::name("department")->insert(["name"     => $ment , ]);
+             Loader::model('department')->insertment($ment);
+            return  ajax_return_adv("添加成功");
+        }else{
+            return  ajax_return_adv_error("不能为空");
+        }
+        
+      }
+      //展示部门
+       public function showment()
+      {
+      $res=  Db::name("department")->select();
+        if($res){
+              foreach ($res as $value) {
+                    $data['resment'][]=array(
+                        'id'=>$value['id'],
+                        'name'=>$value['name']
+                        );
+              }
+           return  ajax_return_adv(array('success'=>'success','list'=>$data['resment'])); 
+             // return   ajax_return_adv("success",$data['resment']);
+        }else{
+
+             return  ajax_return_adv("没有数据");
+          }
+      }
+       //新增成员
+      public function addmember()
+      {
+        // print_r($this->request->post());exit;
+        if($this->request->post()){
+            $data['name']       = $this->request->post('name');
+            $data['gender']     = $this->request->post('gender');
+            $data['department'] = $this->request->post('department');
+            $data['position']   = $this->request->post('position');
+            $data['dxx']        = $this->request->post('dxx');
+            $data['username']   = $this->request->post('username');
+            $data['password']   = md5($this->request->post('password'));
+             // Db::name("department")->insert(["name"     => $ment , ]);
+             Loader::model('departmembers')->insertdepart($data);
+            return  ajax_return_adv("添加成功");
+        }else{
+            return  ajax_return_adv_error("不能为空");
+        }
+        
       }
 }

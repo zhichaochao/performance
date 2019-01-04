@@ -1,0 +1,2256 @@
+[ 2019-01-04T14:09:04+08:00 ] 127.0.0.1 127.0.0.1 GET /img/png/icon_7.png
+[ log ] www.tp.com/img/png/icon_7.png [运行时间：0.036000s][吞吐率：27.78req/s] [内存消耗：1,077.94kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'png',
+    2 => 'icon_7.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:04+08:00 ] 127.0.0.1 127.0.0.1 GET /img/png/icon_8.png
+[ log ] www.tp.com/img/png/icon_8.png [运行时间：0.026000s][吞吐率：38.46req/s] [内存消耗：1,078.00kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'png',
+    2 => 'icon_8.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:04+08:00 ] 127.0.0.1 127.0.0.1 GET /img/png/icon_6.png
+[ log ] www.tp.com/img/png/icon_6.png [运行时间：0.022000s][吞吐率：45.45req/s] [内存消耗：1,078.00kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'png',
+    2 => 'icon_6.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:09+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/index.html
+[ log ] www.tp.com/admin/admin_user/index.html [运行时间：0.068000s][吞吐率：14.71req/s] [内存消耗：6,416.98kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->index[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\traits\controller\Controller.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_user\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.012000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_user` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/admin_user/index.html' , 'admin' , 'AdminUser' , 'index' , 'GET' , 'a:0:{}' , 1546582149) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:09+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/nav.html
+[ log ] www.tp.com/admin/admin_user/nav.html [运行时间：0.038000s][吞吐率：26.32req/s] [内存消耗：5,538.52kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'nav',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->nav[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: nav[D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php:102]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:09+08:00 ] 127.0.0.1 127.0.0.1 GET /img/grzx_02jpg.jpg
+[ log ] www.tp.com/img/grzx_02jpg.jpg [运行时间：0.030000s][吞吐率：33.33req/s] [内存消耗：1,077.98kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'grzx_02jpg.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:10+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/newmembera.html
+[ log ] www.tp.com/admin/admin_user/newmembera.html [运行时间：0.065000s][吞吐率：15.38req/s] [内存消耗：6,299.30kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'newmembera',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->newmembera[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_user\newmembera.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.029000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/admin_user/newmembera.html' , 'admin' , 'AdminUser' , 'newmembera' , 'GET' , 'a:0:{}' , 1546582150) [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:10+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/nav.html
+[ log ] www.tp.com/admin/admin_user/nav.html [运行时间：0.042000s][吞吐率：23.81req/s] [内存消耗：5,538.52kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'nav',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->nav[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: nav[D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php:102]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:30+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.html
+[ log ] www.tp.com/admin.html [运行时间：0.084000s][吞吐率：11.90req/s] [内存消耗：6,171.38kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.013000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_node` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `tp_admin_node` WHERE  (  status=1 AND group_id > 0 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_group` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `tp_admin_group` WHERE  `id` IN (1,2)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1546582170) [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:30+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/welcome.html
+[ log ] www.tp.com/admin/index/welcome.html [运行时间：0.078000s][吞吐率：12.82req/s] [内存消耗：6,079.45kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.013000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1546582170) [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:30+08:00 ] 127.0.0.1 127.0.0.1 GET /img/png/icon_8.png
+[ log ] www.tp.com/img/png/icon_8.png [运行时间：0.035000s][吞吐率：28.57req/s] [内存消耗：1,078.00kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'png',
+    2 => 'icon_8.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:30+08:00 ] 127.0.0.1 127.0.0.1 GET /img/png/icon_7.png
+[ log ] www.tp.com/img/png/icon_7.png [运行时间：0.030000s][吞吐率：33.33req/s] [内存消耗：1,078.00kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'png',
+    2 => 'icon_7.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:30+08:00 ] 127.0.0.1 127.0.0.1 GET /img/png/icon_6.png
+[ log ] www.tp.com/img/png/icon_6.png [运行时间：0.025000s][吞吐率：40.00req/s] [内存消耗：1,078.00kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'png',
+    2 => 'icon_6.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:39+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/index.html
+[ log ] www.tp.com/admin/admin_user/index.html [运行时间：0.071000s][吞吐率：14.08req/s] [内存消耗：6,416.98kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->index[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\traits\controller\Controller.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_user\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.012000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_user` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/admin_user/index.html' , 'admin' , 'AdminUser' , 'index' , 'GET' , 'a:0:{}' , 1546582179) [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:39+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/nav.html
+[ log ] www.tp.com/admin/admin_user/nav.html [运行时间：0.034000s][吞吐率：29.41req/s] [内存消耗：5,538.52kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'nav',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->nav[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: nav[D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php:102]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:39+08:00 ] 127.0.0.1 127.0.0.1 GET /img/grzx_02jpg.jpg
+[ log ] www.tp.com/img/grzx_02jpg.jpg [运行时间：0.042000s][吞吐率：23.81req/s] [内存消耗：1,077.98kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'grzx_02jpg.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:41+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/newmembera.html
+[ log ] www.tp.com/admin/admin_user/newmembera.html [运行时间：0.061000s][吞吐率：16.39req/s] [内存消耗：6,132.18kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'newmembera',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->newmembera[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_user\newmembera.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.029000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/admin_user/newmembera.html' , 'admin' , 'AdminUser' , 'newmembera' , 'GET' , 'a:0:{}' , 1546582181) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:41+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/nav.html
+[ log ] www.tp.com/admin/admin_user/nav.html [运行时间：0.035000s][吞吐率：28.57req/s] [内存消耗：5,538.52kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'nav',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->nav[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: nav[D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php:102]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.html
+[ log ] www.tp.com/admin.html [运行时间：0.094000s][吞吐率：10.64req/s] [内存消耗：6,171.38kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004000s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.014000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_node` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `tp_admin_node` WHERE  (  status=1 AND group_id > 0 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_group` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `tp_admin_group` WHERE  `id` IN (1,2)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1546582197) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:57+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/welcome.html
+[ log ] www.tp.com/admin/index/welcome.html [运行时间：0.072000s][吞吐率：13.89req/s] [内存消耗：6,079.45kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006000s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.015000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1546582197) [ RunTime:0.002000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:57+08:00 ] 127.0.0.1 127.0.0.1 GET /img/png/icon_6.png
+[ log ] www.tp.com/img/png/icon_6.png [运行时间：0.022000s][吞吐率：45.45req/s] [内存消耗：1,078.00kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'png',
+    2 => 'icon_6.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:57+08:00 ] 127.0.0.1 127.0.0.1 GET /img/png/icon_7.png
+[ log ] www.tp.com/img/png/icon_7.png [运行时间：0.029000s][吞吐率：34.48req/s] [内存消耗：1,078.00kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'png',
+    2 => 'icon_7.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:09:57+08:00 ] 127.0.0.1 127.0.0.1 GET /img/png/icon_8.png
+[ log ] www.tp.com/img/png/icon_8.png [运行时间：0.032000s][吞吐率：31.25req/s] [内存消耗：1,078.00kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'png',
+    2 => 'icon_8.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:10:02+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/index.html
+[ log ] www.tp.com/admin/admin_user/index.html [运行时间：0.081000s][吞吐率：12.35req/s] [内存消耗：6,416.98kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->index[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\traits\controller\Controller.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_user\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.011000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_user` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/admin_user/index.html' , 'admin' , 'AdminUser' , 'index' , 'GET' , 'a:0:{}' , 1546582202) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:10:02+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/nav.html
+[ log ] www.tp.com/admin/admin_user/nav.html [运行时间：0.034000s][吞吐率：29.41req/s] [内存消耗：5,538.52kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'nav',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->nav[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: nav[D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php:102]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:10:02+08:00 ] 127.0.0.1 127.0.0.1 GET /img/grzx_02jpg.jpg
+[ log ] www.tp.com/img/grzx_02jpg.jpg [运行时间：0.031000s][吞吐率：32.26req/s] [内存消耗：1,077.98kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'grzx_02jpg.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:10:04+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/newmembera.html
+[ log ] www.tp.com/admin/admin_user/newmembera.html [运行时间：0.080000s][吞吐率：12.50req/s] [内存消耗：6,299.30kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'newmembera',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->newmembera[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_user\newmembera.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.028000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/admin_user/newmembera.html' , 'admin' , 'AdminUser' , 'newmembera' , 'GET' , 'a:0:{}' , 1546582204) [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:10:04+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/nav.html
+[ log ] www.tp.com/admin/admin_user/nav.html [运行时间：0.039000s][吞吐率：25.64req/s] [内存消耗：5,538.52kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'nav',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->nav[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: nav[D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php:102]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:11:02+08:00 ] 127.0.0.1 127.0.0.1 GET /admin.html
+[ log ] www.tp.com/admin.html [运行时间：0.082000s][吞吐率：12.20req/s] [内存消耗：6,171.38kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\index\index.html [ array (
+  0 => 'groups',
+  1 => 'menu',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.012000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_node` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`name`,`group_id`,`title`,`type` FROM `tp_admin_node` WHERE  (  status=1 AND group_id > 0 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_group` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`icon` FROM `tp_admin_group` WHERE  `id` IN (1,2)  AND `status` = 1 ORDER BY sort asc,id asc [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin.html' , 'admin' , 'Index' , 'index' , 'GET' , 'a:0:{}' , 1546582262) [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:11:02+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/index/welcome.html
+[ log ] www.tp.com/admin/index/welcome.html [运行时间：0.086000s][吞吐率：11.63req/s] [内存消耗：6,079.45kb] [文件加载：68]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006000s ]
+[ info ] [ RUN ] app\admin\controller\Index->welcome[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\index\welcome.html [ array (
+  0 => 'last_login_ip',
+  1 => 'last_login_loc',
+  2 => 'current_login_ip',
+  3 => 'current_login_loc',
+  4 => 'info',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.013000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.015000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/index/welcome.html' , 'admin' , 'Index' , 'welcome' , 'GET' , 'a:0:{}' , 1546582262) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:11:02+08:00 ] 127.0.0.1 127.0.0.1 GET /img/png/icon_6.png
+[ log ] www.tp.com/img/png/icon_6.png [运行时间：0.047000s][吞吐率：21.28req/s] [内存消耗：1,078.00kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'png',
+    2 => 'icon_6.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:11:02+08:00 ] 127.0.0.1 127.0.0.1 GET /img/png/icon_8.png
+[ log ] www.tp.com/img/png/icon_8.png [运行时间：0.038000s][吞吐率：26.32req/s] [内存消耗：1,078.00kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'png',
+    2 => 'icon_8.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:11:02+08:00 ] 127.0.0.1 127.0.0.1 GET /img/png/icon_7.png
+[ log ] www.tp.com/img/png/icon_7.png [运行时间：0.025000s][吞吐率：40.00req/s] [内存消耗：1,078.00kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'png',
+    2 => 'icon_7.png',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:11:03+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/index.html
+[ log ] www.tp.com/admin/admin_user/index.html [运行时间：0.072000s][吞吐率：13.89req/s] [内存消耗：6,416.98kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->index[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\traits\controller\Controller.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_user\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.012000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_user` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/admin_user/index.html' , 'admin' , 'AdminUser' , 'index' , 'GET' , 'a:0:{}' , 1546582263) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:11:03+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/nav.html
+[ log ] www.tp.com/admin/admin_user/nav.html [运行时间：0.036000s][吞吐率：27.78req/s] [内存消耗：5,538.52kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'nav',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.003000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->nav[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: nav[D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php:102]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:11:03+08:00 ] 127.0.0.1 127.0.0.1 GET /img/grzx_02jpg.jpg
+[ log ] www.tp.com/img/grzx_02jpg.jpg [运行时间：0.026000s][吞吐率：38.46req/s] [内存消耗：1,077.98kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'grzx_02jpg.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:11:04+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/newmembera.html
+[ log ] www.tp.com/admin/admin_user/newmembera.html [运行时间：0.076000s][吞吐率：13.16req/s] [内存消耗：6,299.30kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'newmembera',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->newmembera[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_user\newmembera.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.029000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/admin_user/newmembera.html' , 'admin' , 'AdminUser' , 'newmembera' , 'GET' , 'a:0:{}' , 1546582264) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:11:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/nav.html
+[ log ] www.tp.com/admin/admin_user/nav.html [运行时间：0.044000s][吞吐率：22.73req/s] [内存消耗：5,538.52kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'nav',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->nav[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: nav[D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php:102]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:16:31+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/index.html
+[ log ] www.tp.com/admin/admin_user/index.html [运行时间：0.085000s][吞吐率：11.76req/s] [内存消耗：6,416.98kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.007000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->index[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\traits\controller\Controller.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_user\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.012000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_user` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/admin_user/index.html' , 'admin' , 'AdminUser' , 'index' , 'GET' , 'a:0:{}' , 1546582591) [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:16:31+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/nav.html
+[ log ] www.tp.com/admin/admin_user/nav.html [运行时间：0.036000s][吞吐率：27.78req/s] [内存消耗：5,538.52kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'nav',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->nav[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: nav[D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php:102]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:16:31+08:00 ] 127.0.0.1 127.0.0.1 GET /img/grzx_02jpg.jpg
+[ log ] www.tp.com/img/grzx_02jpg.jpg [运行时间：0.034000s][吞吐率：29.41req/s] [内存消耗：1,077.98kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'grzx_02jpg.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:17:04+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/newmembera.html
+[ log ] www.tp.com/admin/admin_user/newmembera.html [运行时间：0.058000s][吞吐率：17.24req/s] [内存消耗：6,299.30kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'newmembera',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->newmembera[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_user\newmembera.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.018000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.011000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/admin_user/newmembera.html' , 'admin' , 'AdminUser' , 'newmembera' , 'GET' , 'a:0:{}' , 1546582624) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:17:04+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/nav.html
+[ log ] www.tp.com/admin/admin_user/nav.html [运行时间：0.033000s][吞吐率：30.30req/s] [内存消耗：5,538.52kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'nav',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->nav[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: nav[D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php:102]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:31:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/index.html
+[ log ] www.tp.com/admin/admin_user/index.html [运行时间：0.072000s][吞吐率：13.89req/s] [内存消耗：6,418.75kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->index[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\traits\controller\Controller.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_user\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.013000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_user` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/admin_user/index.html' , 'admin' , 'AdminUser' , 'index' , 'GET' , 'a:0:{}' , 1546583465) [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:31:05+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/nav.html
+[ log ] www.tp.com/admin/admin_user/nav.html [运行时间：0.029000s][吞吐率：34.48req/s] [内存消耗：5,540.32kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'nav',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->nav[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: nav[D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php:102]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:31:05+08:00 ] 127.0.0.1 127.0.0.1 GET /img/grzx_02jpg.jpg
+[ log ] www.tp.com/img/grzx_02jpg.jpg [运行时间：0.027000s][吞吐率：37.04req/s] [内存消耗：1,077.98kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'grzx_02jpg.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2019-01-04T14:31:06+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/newmembera.html
+[ log ] www.tp.com/admin/admin_user/newmembera.html [运行时间：0.072000s][吞吐率：13.89req/s] [内存消耗：6,133.95kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'newmembera',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->newmembera[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_user\newmembera.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.026000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/admin_user/newmembera.html' , 'admin' , 'AdminUser' , 'newmembera' , 'GET' , 'a:0:{}' , 1546583466) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:31:06+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/nav.html
+[ log ] www.tp.com/admin/admin_user/nav.html [运行时间：0.037000s][吞吐率：27.03req/s] [内存消耗：5,540.32kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'nav',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->nav[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: nav[D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php:102]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:31:33+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/admin_user/addmember.html
+[ log ] www.tp.com/admin/admin_user/addmember.html [运行时间：0.041000s][吞吐率：24.39req/s] [内存消耗：6,262.59kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'addmember',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'content-length' => '106',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '李想',
+  'gender' => '男',
+  'department' => '3',
+  'position' => 'php',
+  'dxx' => '1',
+  'username' => 'lixiang',
+  'password' => 'lixiang',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->addmember[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function app\common\model\NOW()[D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\common\model\Departmembers.php:38]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:32:09+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/admin_user/addmember.html
+[ log ] www.tp.com/admin/admin_user/addmember.html [运行时间：0.050000s][吞吐率：20.00req/s] [内存消耗：6,277.39kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'addmember',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'content-length' => '106',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '李想',
+  'gender' => '男',
+  'department' => '3',
+  'position' => 'php',
+  'dxx' => '1',
+  'username' => 'lixiang',
+  'password' => 'lixiang',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->addmember[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_departmembers` [ RunTime:0.012000s ]
+[ error ] [0]数据表字段不存在:[dxx][D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\library\think\db\Builder.php:103]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:32:46+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/admin_user/addmember.html
+[ log ] www.tp.com/admin/admin_user/addmember.html [运行时间：0.078000s][吞吐率：12.82req/s] [内存消耗：6,297.44kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'addmember',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'content-length' => '106',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '李想',
+  'gender' => '男',
+  'department' => '3',
+  'position' => 'php',
+  'dxx' => '1',
+  'username' => 'lixiang',
+  'password' => 'lixiang',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.006000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->addmember[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_departmembers` [ RunTime:0.012000s ]
+[ error ] [10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1546583566' for column 'time' at row 1[D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\library\think\db\Connection.php:457]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:33:32+08:00 ] 127.0.0.1 127.0.0.1 POST /admin/admin_user/addmember.html
+[ log ] www.tp.com/admin/admin_user/addmember.html [运行时间：0.098000s][吞吐率：10.20req/s] [内存消耗：6,268.24kb] [文件加载：70]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'addmember',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'content-length' => '106',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+)
+[ info ] [ PARAM ] array (
+  'name' => '李想',
+  'gender' => '男',
+  'department' => '3',
+  'position' => 'php',
+  'dxx' => '1',
+  'username' => 'lixiang',
+  'password' => 'lixiang',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->addmember[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.011000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_departmembers` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_departmembers` (`name` , `gender` , `department` , `position` , `jurisdiction` , `username` , `password` , `time`) VALUES ('李想' , '男' , 3 , 'php' , 1 , 'lixiang' , '07f27721c1ee0d1ee699225f779ae96f' , 1546583612) [ RunTime:0.033000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/admin_user/addmember.html' , 'admin' , 'AdminUser' , 'addmember' , 'POST' , 'a:7:{s:4:\"name\";s:6:\"李想\";s:6:\"gender\";s:3:\"男\";s:10:\"department\";s:1:\"3\";s:8:\"position\";s:3:\"php\";s:3:\"dxx\";s:1:\"1\";s:8:\"username\";s:7:\"lixiang\";s:8:\"password\";s:7:\"lixiang\";}' , 1546583612) [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:35:31+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/index.html
+[ log ] www.tp.com/admin/admin_user/index.html [运行时间：0.074000s][吞吐率：13.51req/s] [内存消耗：6,418.75kb] [文件加载：75]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.004000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->index[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\traits\controller\Controller.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_user\index.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'page',
+  3 => 'numPerPage',
+) ]
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @app_end [ RunTime:0.012000s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=tpadmin;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin_user` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_admin_user` WHERE  `isdelete` = 0 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin_user` WHERE  `isdelete` = 0 ORDER BY id desc LIMIT 0,20 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_web_log_all` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] INSERT INTO `tp_web_log_all` (`uid` , `ip` , `location` , `os` , `browser` , `url` , `module` , `controller` , `action` , `method` , `data` , `create_at`) VALUES (1 , '127.0.0.1' , '本机地址 本机地址  ' , 'Windows 7' , 'Firefox(64.0)' , 'http://www.tp.com/admin/admin_user/index.html' , 'admin' , 'AdminUser' , 'index' , 'GET' , 'a:0:{}' , 1546583731) [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:35:31+08:00 ] 127.0.0.1 127.0.0.1 GET /admin/admin_user/nav.html
+[ log ] www.tp.com/admin/admin_user/nav.html [运行时间：0.037000s][吞吐率：27.03req/s] [内存消耗：5,540.32kb] [文件加载：66]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin_user',
+    2 => 'nav',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'x-requested-with' => 'XMLHttpRequest',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \app\common\behavior\WebLog @module_init [ RunTime:0.005000s ]
+[ info ] [ RUN ] app\admin\controller\AdminUser->nav[ D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: nav[D:\phpStudy\PHPTutorial\WWW\fsdfsdf\application\admin\controller\AdminUser.php:102]
+
+---------------------------------------------------------------
+[ 2019-01-04T14:35:31+08:00 ] 127.0.0.1 127.0.0.1 GET /img/grzx_02jpg.jpg
+[ log ] www.tp.com/img/grzx_02jpg.jpg [运行时间：0.033000s][吞吐率：30.30req/s] [内存消耗：1,077.98kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\fsdfsdf\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'img',
+    1 => 'grzx_02jpg.jpg',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'cookie' => 'PHPSESSID=eu7evv0lq015v8fkpc5kred4q1',
+  'connection' => 'keep-alive',
+  'referer' => 'http://www.tp.com/admin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:64.0) Gecko/20100101 Firefox/64.0',
+  'host' => 'www.tp.com',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

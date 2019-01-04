@@ -1,0 +1,397 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:87:"D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\index\welcome.html";i:1546420310;}*/ ?>
+﻿ <!--右边主内容-->
+        <div class="r_content clearfix">
+            
+            <ul class="in_ul">
+                <li>
+                    <a href="###">
+                        <img src="__STATIC__/img/png/icon_4.png"/>
+                        <span class="span1">考核待办</span>
+                        <p class="p1"><em>45</em>份考核等待办理</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="__STATIC__/img/png/icon_5.png"/>
+                        <span class="span1">组织架构</span>
+                        <p class="p1">系统共有56个成员</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <div class="jx_li">
+                            <p class="p2">10月份绩效</p>
+                            <p class="p3">
+                                <span class="fen">92</span>/<em>100</em>
+                            </p>
+                            
+                            <div class="circle">
+                                <p class="can">
+                                    <span class="can_fen">92</span>
+                                    <em>分</em>
+                                </p>
+                                <canvas id="canvas_1" width="120" height="120"></canvas>
+                                <canvas id="canvas_2" width="120" height="120"></canvas>
+                            </div>
+                            <p class="pingyu"></p>
+                            <span class="yuan1"></span>
+                            <span class="yuan2"></span>
+                        </div>
+                        
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/png/icon_6.png"/>
+                        <span class="span1">团队目标</span>
+                        <p class="p1">本月团队目标还未设置</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/png/icon_7.png"/>
+                        <span class="span1">绩效自评</span>
+                        <p class="p1">每月1-5号开放自评通道</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="###">
+                        <img src="img/png/icon_8.png"/>
+                        <span class="span1">创建目标</span>
+                        <p class="p1">本月目标还未提交</p>
+                    </a>
+                </li>
+            </ul>
+            
+            <!--团队绩效排行榜-->
+            <div class="tuxin clearfix">
+                <form action="">
+                    <p class="p1">10月团队绩效均分排行榜</p>
+                    <div class="label ny_label">
+                        <input class="in_sub" type="submit" value="搜索:" />
+                        <input class="in_text" type="text" placeholder="2018-11" />
+                        <div class="time_ny">
+                            <div class="top clearfix">
+                                <span class="sp sp_lf"></span>
+                                <input class="ny_in"  onkeyup="this.value=this.value.replace(/\D/g,'')" type="text" value="0000" />
+                                <span class="sp sp_rf"></span>
+                            </div>
+                            <div class="bot clearfix">
+                                <ul class="ul_ny clearfix">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <p class="p2">第一名：乐米 <span>95.8分</span></p>
+                <div id="container" class="tuxin_div"></div>
+            </div>
+            
+            <!--日历-->
+            <div class="rili clearfix">
+                <div class="top clearfix">
+                    <span class="n_y">
+                        <i class="n">0000</i>-<i class="y">00</i>
+                    </span>
+                    <span class="day_active">回到今天</span>
+                    
+                    <span class="sp sp_rf"></span>
+                    <span class="sp sp_lf"></span>
+                </div>
+                <div class="bot clearfix">
+                    <ol class="rl_ol clearfix">
+                        <li>SU</li>
+                        <li>MO</li>
+                        <li>TU</li>
+                        <li>WE</li>
+                        <li>TH</li>
+                        <li>FR</li>
+                        <li>SA</li>
+                    </ol>
+                    
+                    <ul class="rl_ul clearfix">
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+
+        <script>
+    window.onload = function(){
+    
+        function inte(percent) {
+            var canvas_1 = document.querySelector('#canvas_1');
+            var canvas_2 = document.querySelector('#canvas_2');
+            var ctx_1 = canvas_1.getContext('2d');
+            var ctx_2 = canvas_2.getContext('2d');
+            //画底部的灰色圆环
+            ctx_1.lineWidth = 6;
+            ctx_1.strokeStyle = "#e5daff";
+            ctx_1.beginPath();
+            ctx_1.arc(canvas_1.width / 2, canvas_1.height / 2, canvas_1.width / 2 - ctx_1.lineWidth / 2, 0, Math.PI * 2, false);
+            ctx_1.closePath();
+            ctx_1.stroke();
+            ctx_2.lineWidth = 6;
+            ctx_2.strokeStyle = "#ba9bff";
+            var angle = 0;
+            var timer;
+            (function draw() {
+                timer = requestAnimationFrame(draw);
+                //百分比圆环
+                ctx_2.clearRect(0, 0, canvas_2.width, canvas_2.height)
+                ctx_2.beginPath();
+                ctx_2.arc(canvas_2.width / 2, canvas_2.height / 2, canvas_2.width / 2 - ctx_2.lineWidth / 2, 0, angle * Math.PI / 180, false);
+                angle = angle+5;
+                var percentAge = parseInt((angle / 360) * 100)
+                if (angle > (percent / 100 * 360)) {
+                    percentAge = percent
+                    window.cancelAnimationFrame(timer);
+                };
+                ctx_2.stroke();
+                ctx_2.closePath();
+                ctx_2.save();
+                ctx_2.beginPath();
+                ctx_2.rotate(90 * Math.PI / 180)
+                ctx_2.closePath();
+                ctx_2.restore();
+            })()
+        }
+        
+        let fen = parseInt($(".fen").text());
+        if(fen>=90){
+            $(".pingyu").text("真棒");
+        }else if(fen>=70 && fen<90){
+            $(".pingyu").text("不错");
+        }else{
+            $(".pingyu").text("加油");
+        }
+        
+        inte(fen);
+        
+        
+        
+        function timer(fen){
+            let i = 0;
+            setInterval(function(){
+                i= i + 3;
+                if(i>=fen){
+                    i=fen;
+                    $(".fen").text(i);
+                    $(".can_fen").text(i);
+                    return;
+                }
+                $(".fen").text(i);
+                $(".can_fen").text(i);
+            },50)
+        }
+        timer(fen)
+        
+    }
+    
+    </script>
+    
+<script type="text/javascript" src="__STATIC__/js/echarts.min.js"></script>
+<script type="text/javascript">
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+var dataAxis = ['总经理', '财务', '人事', '采购', '储运', '技术', '全*赴', '勇*前', '乐米', '思创', '尼佳'];
+var data = [66, 88, 69, 65, 88, 92, 63, 92, 95.8, 92, 90];
+var dataAxis ;
+var yMax = 100;
+var dataShadow = [];
+
+for (var i = 0; i < data.length; i++) {
+    dataShadow.push(yMax);
+}
+
+option = {
+   
+    xAxis: {
+        data: dataAxis,
+        axisLabel: {
+            textStyle: {
+                color: '#999'
+            }
+            
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: false
+        },
+        
+    },
+    yAxis: {
+        splitLine: {
+            show: true,
+            lineStyle:{
+                type:'dotted',
+                color:'#eee'
+            }
+            
+        },
+        axisLine: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLabel: {
+            textStyle: {
+                color: '#999'
+            }
+        },
+    },
+    grid: {
+        left: '0%',
+        right: '0%',
+        bottom: '0%',
+        containLabel: true
+    },
+    series: [
+        { 
+            type: 'bar',
+            itemStyle: {
+                normal: {color: 'rgba(0,0,0,0)'}
+            },
+            barGap:'-100%',
+            barCategoryGap:'70%',
+            data: dataShadow,
+            animation: false
+        },
+        {
+            type: 'bar',
+            itemStyle: {
+                normal: {
+                    barBorderRadius: [25, 25, 0, 0],
+                    color: new echarts.graphic.LinearGradient(
+                        0, 0, 0, 1,
+                        [
+                            {offset: 0, color: '#ece9fe'},
+                            {offset: 0.1, color: '#ece9fe'},
+                            {offset: 1, color: '#ece9fe'}
+                        ]
+                    )
+                },
+                emphasis: {
+//                  barBorderRadius: 7,
+                    color: new echarts.graphic.LinearGradient(
+                        0, 0, 0, 1,
+                        [
+                            {offset: 0, color: '#9a55fe'},
+                            {offset: 0.1, color: '#9a55fe'},
+                            {offset: 1, color: '#773eff'}
+                        ]
+                    )
+                }
+            },
+            label: {
+                normal: {
+                    show: true,
+                    position: 'top',
+                    color: '#ece9fe'
+                },
+                emphasis: {
+                    show: true,
+                    position: 'top',
+                    color: '#7b41ff'
+                } 
+            },
+            data: data
+        }
+    ]
+};
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}   
+</script>
+
+ <script type="text/javascript">
+         
+     var nowDate=new Date();
+     var inputYear=nowDate.getFullYear();
+     var inputMonth=nowDate.getMonth();
+     var date=nowDate.getDate();
+     $(".ny_label .in_text").attr("placeholder",inputYear.toString()+"-"+(inputMonth+1).toString()) 
+         
+    function rili(nian,yue){
+         inputYear = nian;
+         inputMonth = yue;
+         
+         var newDate=new Date(inputYear,inputMonth,1);
+         var week=newDate.getDay();
+         var howManyDay=new Date(inputYear,inputMonth+1,0).getDate();
+         var lastDays=new Date(inputYear,inputMonth,0).getDate();
+         
+         $(".n_y .n").text(inputYear);
+         if((inputMonth+1).toString().length<2){
+//          inputMonth = inputMonth + 1;
+            inputMonth = "0"+(inputMonth+1).toString();
+            $(".n_y .y").text(inputMonth);
+         }else{
+            $(".n_y .y").text(inputMonth + 1);
+         }
+         
+         var calendar="";
+         $(".rl_ul").html('');
+         for(var i=lastDays-week+1,j=0;i<=lastDays;i++){
+             let li_text = '<li><span class="hui">'+i+'</span></li>';
+             $(".rl_ul").append(li_text);
+         }
+         var nums="";
+             for(var i=1;i<=howManyDay;i++){
+               if(i==date){
+                 if(inputMonth == nowDate.getMonth()){
+                    let li_text = '<li><span class="active">'+i+'</span></li>';
+                    $(".rl_ul").append(li_text);
+                 }else{
+                    let li_text = '<li><span>'+i+'</span></li>';
+                    $(".rl_ul").append(li_text);
+                 }
+               }else {
+                 let li_text = '<li><span>'+i+'</span></li>';
+                 $(".rl_ul").append(li_text);
+               }
+               
+         }
+    }
+    rili(inputYear,inputMonth);
+    
+    //上一月
+    $(".rili .sp_lf").click(function(){
+        let nian = $(".n_y .n").text();
+        let yue = $(".n_y .y").text();
+        if(yue==1){
+            nian--;
+            yue=13;
+        }
+        yue = yue -2;
+        rili(nian,yue);
+    })
+    //下一月
+    $(".rili .sp_rf").click(function(){
+        let nian = $(".n_y .n").text();
+        let yue = $(".n_y .y").text();
+        console.log(yue)
+        if(yue==12){
+            nian++;
+            yue=0;
+        }
+        yue = yue++;
+        rili(nian,yue);
+    })
+    //回到今天
+    $(".rili .day_active").click(function(){
+        let nian = nowDate.getFullYear();
+        let yue = nowDate.getMonth();
+        rili(nian,yue);
+    })
+    
+    
+  </script>
+
