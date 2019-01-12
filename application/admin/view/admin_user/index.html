@@ -2,10 +2,10 @@
         <!--左边内容导航-->
         <div class="lfnav_text clearfix">
             <button class="edit_btn" type="button">
-                 <span>编辑部门4564656d</span> 
+                <span>编辑部门</span>
             </button>
             <ul id='bu_liist'>
-
+                    <!-- showment 方法  /admin/admin_user/showment.html  code =>'0' 成功 $list  -->
 
                 <li class="active">
                     <a href="###"><span>所有成员（88）</span></a>
@@ -55,9 +55,12 @@
                 </form>
                 
             </div>
-            
+
+
+            <!-- memberexport 方法  /admin/admin_user/memberexport.html  code =>'0'   -->
             <div class="daochu clearfix">
-                <span>导出为Excel</span>
+                <input type="hidden" value="4" name="ment_id">
+                <span onclick="expord('4');" target="_blank">导出为Excel</span>
             </div>
             
             <a class="add_cy clearfix" data-href="{:\\think\\Url::build(\'admin_user/newmembera\')}" data-nav="{:\\think\\Url::build(\'admin_user/nav\')}">+&nbsp;新增成员</a>
@@ -74,6 +77,8 @@
                         <th>状态</th>
                         <th>操作</th>
                     </tr>
+                    <!-- 展示成员 -->
+                    <!-- showdepartment 方法  /admin/admin_user/showdepartment.html  code =>'0'  $departlist   -->
                     <tr>
                         <td><img src="img/grzx_02jpg.jpg"/></td>
                         <td><span>王二小</span></td>
@@ -82,10 +87,13 @@
                         <td><span>11/23  14:08</span></td>
                         <td><span>激活</span></td>
                         <td>
-                            <button>重置密码</button>
-                            <a class="edit_a" href="###">修改</a>
-                            <button>冻结</button>
-                            <button class="del">删除</button>
+                            <button onclick="reset_password('传id')">重置密码</button>
+                            <!-- 传id -->
+                            <a class="edit_a" data-href="{:\\think\\Url::build(\'admin_user/editmembera\')}&id=3" data-nav="{:\\think\\Url::build(\'admin_user/nav\')}">修改</a>
+                            <!--  -->
+                            <button onclick="frozen_accoun('传id')">冻结</button>
+
+                            <button class="del" onclick="delete_members('传id')" >删除</button>
                         </td>
                     </tr>
                     <tr>
@@ -152,10 +160,13 @@
                         <td><span>11/23  14:08</span></td>
                         <td><span>激活</span></td>
                         <td>
-                            <button>重置密码</button>
-                            <a class="edit_a"  onclick=" loadhtml('{:\\think\\Url::build(\'admin_user/nav\')}');">修改</a>
-                            <button>冻结</button>
-                            <button class="del">删除</button>
+                            <button onclick="reset_password('传id')">重置密码</button>
+                            <!-- 传id -->
+                            <a class="edit_a" data-href="{:\\think\\Url::build(\'admin_user/editmembera\')}&id=3" data-nav="{:\\think\\Url::build(\'admin_user/nav\')}">修改</a>
+                            <!--  -->
+                            <button onclick="frozen_accoun('传id')">冻结</button>
+
+                            <button class="del" onclick="delete_members('传id')" >删除</button>
                         </td>
                     </tr>
                     <tr>
@@ -187,8 +198,12 @@
                         <ol class="bm_ol" id="if_gdt">
                             <h2>选择部门:</h2>
                             <!--  -->
+                            <!-- 删除部门 deletedepartment("传id")  -->
 
-                            <li ondrop="drop(event,this)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event, this)">
+                            <!-- 展示部门 -->
+                            <!-- showment 方法  /admin/admin_user/showment.html ； code =>'0' 成功； $list => 所有部门；$parentlist =>父类部门 -->
+
+                            <li ondrop="drop(event,this)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event, this)" onclick="deletedepartment('');">
                                 <input type="text" value="总经理" disabled="disabled" />
                             </li>
                             <li ondrop
@@ -224,11 +239,14 @@
                             </li>
                             <li>
                                 <input class="active" type="text" placeholder="请输入新建部门名称" name="ment" />
+                                <!-- 这个下来 展示父类部门 -->
+                                <input type="hidden" name="parent_id" value="">
+                                <!-- <input type="hidden" name="parent_id" value=""> -->
                             </li>
                         </ol>
                     </div>
                     
-                    <input class="qd_in" type="submit"  draggable="true" value="确定" onclick="cancel_ment();" />
+                    <input class="qd_in" type="submit"  draggable="true" value="确定" onclick="insertment();" />
                     <input class="qx_in" type="reset" value="取消"/>
                 <!-- </form> -->
                 
@@ -238,19 +256,74 @@
 {/block}
 <script>
 //新建部门
-// $('.qd_in').on('click', function() {
-    // alert(11);
-function cancel_ment(){
+function insertment(){
             $.ajax({
                 url:'{:\\think\\Url::build("insertment")}',
                 type:"post",
-                data: $('#if_gdt input[type=\'text\']'),
+                data: $('#if_gdt input[type=\'text\']','#if_gdt input[type=\'hidden\']'),
                 // success:function(){
                 //        location.reload(); 
                 // }
             });
     }
 
+//删除部门
+function deletedepartment(id){
+    // alert(11);
+            $.ajax({
+                url:'{:\\think\\Url::build("delment")}',
+                type:"post",
+                data: {'id':id},
+                // success:function(){
+                //        location.reload(); 
+                // }
+            });
+    }
+//删除成员
+function delete_members(id){
+            $.ajax({
+                url:'{:\\think\\Url::build("delmember")}',
+                type:"post",
+                data: {'id':id},
+                // success:function(){
+                //        location.reload(); 
+                // }
+            });
+    }
+//重置密码
+function reset_password(id){
+            $.ajax({
+                url:'{:\\think\\Url::build("resetpassword")}',
+                type:"post",
+                data: {'id':id},
+                // success:function(){
+                //        location.reload(); 
+                // }
+            });
+    }
+//冻结账户
+function frozen_accoun(id){
+            $.ajax({
+                url:'{:\\think\\Url::build("frozenmember")}',
+                type:"post",
+                data: {'id':id},
+                // success:function(){
+                //        location.reload(); 
+                // }
+            });
+    }
+//导出
+function expord(department_id){
+    // alert(department_id);
+            $.ajax({
+                url:'{:\\think\\Url::build("memberexport")}',
+                type:"post",
+                data: {'department_id':department_id},
+                // success:function(){
+                //        location.reload(); 
+                // }
+            });
+    }
 // function loadlist(href) {
 //          $.ajax({
 //             url:href,
@@ -263,7 +336,7 @@ function cancel_ment(){
 // 
 $(function(){
             $(".rftext_con a").click(function(){
-           
+           // alert(11);
                 if ($(this).attr('data-href')) {
                     loadhtml($(this).attr('data-href'));
                 }

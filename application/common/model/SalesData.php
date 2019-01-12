@@ -16,26 +16,16 @@ namespace app\common\model;
 
 use think\Model;
 
-class Department extends Model
+class SalesData extends Model
 {
-
     // // 开启自动写入时间戳字段
-    // protected $autoWriteTimestamp = 'int';
+    protected $autoWriteTimestamp = 'int';
 
     // /**
     //  * 列表
     //  */
-    public function insertment($ment,$parent_id)
-    {
-        return $this->insert(
-            [
-                "name"          => $ment,
-                "parent_id"     => $parent_id,
-            ]
-        );
-    }
-        public function deldment($id)
-    {
-        return $this->where("id", $id)->delete();
-    }
+    // public function getList($field = 'id,name', $where = 'isdelete=0 AND status=1')
+    // {
+    //     return $this->field($field)->where($where)->select();
+    // }
 }

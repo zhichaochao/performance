@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:85:"D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\index\index.html";i:1546480799;s:87:"D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\template\base.html";i:1546480821;s:91:"D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\template\nav_left.html";i:1546572020;s:90:"D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\template\nav_top.html";i:1546422885;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:85:"D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\index\index.html";i:1546480799;s:87:"D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\template\base.html";i:1546480821;s:91:"D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\template\nav_left.html";i:1547106067;s:90:"D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\template\nav_top.html";i:1546422885;}*/ ?>
 ﻿<!DOCTYPE html>
 <html>
       <head>
@@ -51,7 +51,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="###">
+                    <a data-href="<?php echo \think\Url::build('admin_group/index'); ?>" data-nav="<?php echo \think\Url::build('admin_user/nav'); ?>">
                         <span>团队管理</span>
                     </a>
                 </li>

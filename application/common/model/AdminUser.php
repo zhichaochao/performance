@@ -36,4 +36,67 @@ class AdminUser extends Model
     {
         return $this->where("id", $uid)->update(['password' => password_hash_tp($password)]);
     }
+    //添加
+    public function insertdepart($data)
+    {
+
+        return $this->insert(
+            [
+                "realname"     => $data['name'],
+                "gender"     => $data['gender'],
+                "department_id"     => $data['department'],
+                "position"     => $data['position'],
+                "jurisdiction"     => $data['dxx'],
+                "account"     => $data['account'],
+                "image"     => $data['image'],
+                "password"     => password_hash_tp($data['password']),
+                "create_time"     =>  time(),
+                "update_time"     =>  time(),
+            ]
+        );
+
+    }
+    //删除
+    public function deldmember($id)
+    {
+        return $this->where("id", $id)->update(
+            [
+                "isdelete"     => 1,
+            ]
+            );
+    }
+     //冻结成员
+    public function frozenmember($id)
+    {
+        return $this->where("id", $id)->update(
+            [
+                "status"     => 0,
+            ]
+            );
+    }
+    //重置密码
+    public function resetpassword($id)
+    {
+        return $this->where("id", $id)->update(
+            [
+                "password"     => password_hash_tp("88888888"),
+            ]
+            );
+    }
+      //修改资料
+    public function updatepart($id,$data)
+    {
+        return $this->where("id",$id)->update(
+            [
+                "realname"     => $data['name'],
+                "gender"     => $data['gender'],
+                "department_id"     => $data['department'],
+                "position"     => $data['position'],
+                "jurisdiction"     => $data['dxx'],
+                "account"     => $data['account'],
+                // "password"     => password_hash_tp($data['password']),
+                "update_time"     =>  time(),
+            ]
+        );
+    }
 }

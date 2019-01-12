@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:91:"D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_group\index.html";i:1547186692;}*/ ?>
 <div class="lfnav_text clearfix top_nav">
            <div class="nav_con clearfix">
                 <a class="nav_a active" href="###">设置团队目标</a>

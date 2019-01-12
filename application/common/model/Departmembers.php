@@ -40,8 +40,8 @@ class Departmembers extends Model
         );
     }
     
-     public function showment()
+    public function deldmember($id)
     {
-        return $this->select();
+        return $this->where("id", $id)->delete();
     }
 }
