@@ -86,6 +86,8 @@ class AdminUser extends Model
       //修改资料
     public function updatepart($id,$data)
     {
+        if(!empty($data['password'])){
+
         return $this->where("id",$id)->update(
             [
                 "realname"     => $data['name'],
@@ -94,9 +96,23 @@ class AdminUser extends Model
                 "position"     => $data['position'],
                 "jurisdiction"     => $data['dxx'],
                 "account"     => $data['account'],
-                // "password"     => password_hash_tp($data['password']),
+                "password"     => password_hash_tp($data['password']),
                 "update_time"     =>  time(),
             ]
         );
+        }else{
+            return $this->where("id",$id)->update(
+            [
+                "realname"     => $data['name'],
+                "gender"     => $data['gender'],
+                "department_id"     => $data['department'],
+                "position"     => $data['position'],
+                "jurisdiction"     => $data['dxx'],
+                "account"     => $data['account'],
+                "update_time"     =>  time(),
+            ]
+        );
+        }
+
     }
 }

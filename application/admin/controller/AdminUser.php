@@ -135,8 +135,9 @@ class AdminUser extends Controller
        public function showment()
       {
         $this->checkUser();
-      $res=  Db::name("department")->select();
+      $res=  Db::name("department")->where('parent_id!=0')->select();
         if($res){
+              $a=0;
               foreach ($res as $value) {
                   $id=$value['id'];
                   $resq=  Db::name("department")
@@ -145,21 +146,34 @@ class AdminUser extends Controller
                     ->where('tp_admin_user.department_id',$id)
                     ->count('w.id');
                   $data['resment'][]=array(
-                        'id'=>$value['id'],
-                        'name'=>$value['name'].'('.$resq.')'
+                        'department_id'=>$value['id'],
+                        'name'=>$value['name'],
+                        'number'=>$resq
                         );
+                  $a+=$resq;
+
               }
-            $result=  Db::name("department")->where('parent_id=0')->select();
-            if($result){
-            foreach ($result as $values) {
-                        $data['parentclass'][]=array(
-                            'id'=>$values['id'],
-                            'name'=>$values['name']
-                            );
-                     } 
-                  }
-                  
-               return  ajax_return_adv(array('success'=>'success','list'=>$data['resment'],'parentlist'=>$data['parentclass'])); 
+              $data['znumber']=$a;
+
+              if(!empty($this->request->post('parent_id'))){
+                $parent_id=$this->request->post('parent_id');
+                // $parent_id=0;
+
+                $result=  Db::name("department")->where('parent_id',$parent_id)->select();
+                if($result){
+                foreach ($result as $values) {
+                            $data['parentclass'][]=array(
+                                'id'=>$values['id'],
+                                'name'=>$values['name']
+                                );
+                         } 
+                      }
+                   return  ajax_return_adv(array('success'=>'success','list'=>$data['resment'],'znumber'=>$data['znumber'] ,'listparen'=>$data['parentclass'])); 
+                 }else{
+                   return  ajax_return_adv(array('success'=>'success','list'=>$data['resment'],'znumber'=>$data['znumber'])); 
+                 }
+
+              
         }else{
 
              return  ajax_return_adv("没有数据");
@@ -170,8 +184,8 @@ class AdminUser extends Controller
       {
         $this->checkUser();
         // print_r($this->request->post());exit;
-        if($this->request->post() && !empty($this->request->post('id'))){
-            $id=$this->request->post('id');
+        if($this->request->post() && !empty($this->request->post('department_id'))){
+            $id=$this->request->post('department_id');
 
              Loader::model('department')->deldment($id);
              
@@ -189,9 +203,10 @@ class AdminUser extends Controller
       
       if($this->request->post('department_id')){
         $department_id=$this->request->post('department_id');
+        // $where =;
         $res=  Db::name("AdminUser")->where('department_id',$department_id)->select();
       }else{
-        $res=  Db::name("AdminUser")->select();
+        $res=  Db::name("AdminUser")->where('isdelete=0')->select();
       }
         if($res){
               foreach ($res as $value) {
@@ -203,7 +218,7 @@ class AdminUser extends Controller
                     $positioner=Db::name("position")->field('position')->where('id',$position)->find();
                      $posit=$positioner['position'];
                     $data['departresment'][]=array(
-                        'id'            =>$value['id'],
+                        'uid'            =>$value['id'],
                         'name'          =>$value['realname'],
                         'gender'        =>$value['gender'],
                         'position'      =>$posit,
@@ -213,12 +228,12 @@ class AdminUser extends Controller
                         'status'=>$value['status'] > 0 ? "激活" : "未激活"
                         );
               }
-              print_r($data['departresment']);exit;
+              // print_r($data['departresment']);exit;
               
            return  ajax_return_adv(array('success'=>'success','departlist'=>$data['departresment'])); 
         }else{
 
-             return  ajax_return_adv("没有数据");
+             return  ajax_return_adv_error("没有数据");
           }
       }
        //新增成员
@@ -254,7 +269,7 @@ class AdminUser extends Controller
             return  ajax_return_adv("添加成功");
         }else{
 
-            return  ajax_return_adv_error("不能为空");
+            return  ajax_return_adv_error("添加失败");
         }
         
       }
@@ -263,8 +278,8 @@ class AdminUser extends Controller
       {
         $this->checkUser();
         // print_r($this->request->post());exit;
-        if($this->request->post() && !empty($this->request->post('id'))){
-            $id=$this->request->post('id');
+        if($this->request->post() && !empty($this->request->post('uid'))){
+            $id=$this->request->post('uid');
 
              Loader::model('AdminUser')->deldmember($id);
 
@@ -280,8 +295,8 @@ class AdminUser extends Controller
       {
         $this->checkUser();
         // print_r($this->request->post());exit;
-        if($this->request->post() && !empty($this->request->post('id'))){
-            $id=$this->request->post('id');
+        if($this->request->post() && !empty($this->request->post('uid'))){
+            $id=$this->request->post('uid');
 
              Loader::model('AdminUser')->frozenmember($id);
              $departm=Db::name("AdminUser")->field('status')->where('id',$id)->find();
@@ -297,11 +312,28 @@ class AdminUser extends Controller
         }
         
       }
+     //展示职位
+      public function showposition()
+      {
+        $this->checkUser();
+         $res=  Db::name("position")->select();
+         if($res){
+           foreach ($res as $value) {
+             $data['listposition'][]=array(
+                        'position_id'            =>$value['id'],
+                        'position'          =>$value['position']
+                        );
+           }
+           return  ajax_return_adv(array('success'=>'success','listposition'=> $data['listposition']));
+         }else{
+           return  ajax_return_adv_error("没有数据");
+         }
+      }
       //修改成员资料
       public function editmembera()
       {
         $this->checkUser();
-        $id = $_GET['id'];
+        $id = $_GET['uid'];
         $res=Db::name('AdminUser')->where('id',$id)->find();
        
         // $data['persinformation']=array(
@@ -326,7 +358,7 @@ class AdminUser extends Controller
         // print_r($this->request->post());exit;
         if($this->request->post()){
 
-            $id                 = $this->request->post('id');
+            $id                 = $this->request->post('uid');
             $data['name']       = $this->request->post('name');
             $data['gender']     = $this->request->post('gender');
             $data['department'] = $this->request->post('department');
@@ -339,7 +371,7 @@ class AdminUser extends Controller
             return  ajax_return_adv("修改成功");
         }else{
 
-            return  ajax_return_adv_error("失败");
+            return  ajax_return_adv_error("修改失败");
         }
         
       }
@@ -348,8 +380,8 @@ class AdminUser extends Controller
       {
         $this->checkUser();
         // print_r($this->request->post());exit;
-        if($this->request->post() && !empty($this->request->post('id'))){
-            $id=$this->request->post('id');
+        if($this->request->post() && !empty($this->request->post('uid'))){
+            $id=$this->request->post('uid');
 
              Loader::model('AdminUser')->resetpassword($id);
 
@@ -395,7 +427,7 @@ class AdminUser extends Controller
                         'status'        =>$value['status'] > 0 ? "激活" : "未激活"
                         );
             }
-            if ($error = \Excel::export($header, $data['departresment'], "成员列表".date('Y-m-d'), '2007')) {
+            if ($error = \Excel::export($header, $data['departresment'], "MemberList".date('Y-m-d'), '2007')) {
                 throw new Exception($error);
             }
         }

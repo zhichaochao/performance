@@ -1,34 +1,353 @@
-{extend name="template/base" /}
-{block name="content"}
-<div class="page-container">
-    {include file='form' /}
-    <div class="cl pd-5 bg-1 bk-gray">
-        <span class="l">
-            {tp:menu /}
-        </span>
-        <span class="r pt-5 pr-5">
-            共有数据 ：<strong>{$count}</strong> 条
-        </span>
-    </div>
-    <table class="table table-border table-bordered table-hover table-bg mt-20">
-        <thead>
-        <tr class="text-c">
-            {include file="th" /}
-            <th width="70">操作</th>
-        </tr>
-        </thead>
-        <tbody>
-        {volist name="list" id="vo"}
-        <tr class="text-c">
-            {include file="td" /}
-            <td class="f-14">
-                {$vo.status|show_status=$vo.id}
-                {tp:menu menu='sedit,sdelete,user,access' url=',,user:id=$vo.id,access:id=$vo.id' title=',,用户列表,授权' /}
-            </td>
-        </tr>
-        {/volist}
-        </tbody>
-    </table>
-    <div class="page-bootstrap">{$page}</div>
-</div>
-{/block}
+<!--右边主内容-->
+        <div class="rftext_con khdb_text khjg_text clearfix">
+            <div class="echart tdjx clearfix">
+                <div class="tuxin clearfix">
+                    <p class="p1">前12个月绩效评分结果</p>
+                    <div id="container" class="tuxin_div"></div>
+                </div>
+                <div class="right clearfix">
+                    <p class="p2">绩效评分结果统计分析</p>
+                    <div id="containers" style="height: 11.75vw;margin-top: 2.08vw;"></div>
+                    <div class="bot clearfix">
+                        <ul class="clearfix">
+                            <li><i></i><span>70-</span></li>
+                            <li><i></i><span>70-90</span></li>
+                            <li><i></i><span>90+</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="time_xz clearfix" style="margin: 0;">
+                <div class="label ny_label time_start">
+                    <input class="in_text" type="text" placeholder="开始时间" />
+                    
+                    <div class="time_ny" style="right:-187%">
+                        <div class="top clearfix">
+                            <span class="sp sp_lf"></span>
+                            <input class="ny_in"  onkeyup="this.value=this.value.replace(/\D/g,'')" type="text" value="0000" />
+                            <span class="sp sp_rf"></span>
+                        </div>
+                        <div class="bot clearfix">
+                            <ul class="ul_ny clearfix">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="label ny_label time_end">
+                    <input class="in_text" type="text" placeholder="结束时间" />
+                    
+                    <div class="time_ny" style="right:-187%">
+                        <div class="top clearfix">
+                            <span class="sp sp_lf"></span>
+                            <input class="ny_in"  onkeyup="this.value=this.value.replace(/\D/g,'')" type="text" value="0000" />
+                            <span class="sp sp_rf"></span>
+                        </div>
+                        <div class="bot clearfix">
+                            <ul class="ul_ny clearfix">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="daochu clearfix" style="float: right;margin-right: 4.16vw;"> 
+                <span>导出为Excel</span>
+            </div>
+            
+            <div class="bot clearfix">
+                <table border="" cellspacing="" cellpadding="">
+                    <tr>
+                        <th>序列</th>
+                        <th>头像</th>
+                        <th>姓名</th>
+                        <th class="px">考核日期</th>
+                        <th class="px">考核时间</th>
+                        <th>评分</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td><span>1</span></td>
+                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><span>王二小</span></td>
+                        <td><span>2018-12</span></td>
+                        <td><span>2018/11/23 09:34</span></td>
+                        <td><span>96</span></td>
+                        <td>
+                            <a class="pf_a" href="###">查看详情</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>1</span></td>
+                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><span>王二小</span></td>
+                        <td><span>2018-12</span></td>
+                        <td><span>2018/11/23 09:34</span></td>
+                        <td><span>96</span></td>
+                        <td>
+                            <a class="pf_a" href="###">查看详情</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>1</span></td>
+                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><span>王二小</span></td>
+                        <td><span>2018-12</span></td>
+                        <td><span>2018/11/23 09:34</span></td>
+                        <td><span>96</span></td>
+                        <td>
+                            <a class="pf_a" href="###">查看详情</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>1</span></td>
+                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><span>王二小</span></td>
+                        <td><span>2018-12</span></td>
+                        <td><span>2018/11/23 09:34</span></td>
+                        <td><span>96</span></td>
+                        <td>
+                            <a class="pf_a" href="###">查看详情</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>1</span></td>
+                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><span>王二小</span></td>
+                        <td><span>2018-12</span></td>
+                        <td><span>2018/11/23 09:34</span></td>
+                        <td><span>96</span></td>
+                        <td>
+                            <a class="pf_a" href="###">查看详情</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>1</span></td>
+                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><span>王二小</span></td>
+                        <td><span>2018-12</span></td>
+                        <td><span>2018/11/23 09:34</span></td>
+                        <td><span>96</span></td>
+                        <td>
+                            <a class="pf_a" href="###">查看详情</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span>1</span></td>
+                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><span>王二小</span></td>
+                        <td><span>2018-12</span></td>
+                        <td><span>2018/11/23 09:34</span></td>
+                        <td><span>96</span></td>
+                        <td>
+                            <a class="pf_a" href="###">查看详情</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+
+        <script type="text/javascript" src="__STATIC__/js/echarts.min.js"></script>
+        <script type="text/javascript" src="__STATIC__/js/commons.js" ></script>
+<script type="text/javascript">
+$(function(){
+            $(".nav_con a").click(function(){
+           // alert(11);
+                if ($(this).attr('data-href')) {
+                    loadhtml($(this).attr('data-href'));
+                }
+                if ($(this).attr('data-nav')) {
+                    loadnav($(this).attr('data-nav'));
+
+                }
+
+            })
+
+    });
+$(function(){
+            $(".top a").click(function(){
+           // alert(11);
+                if ($(this).attr('data-href')) {
+                    loadhtml($(this).attr('data-href'));
+                }
+                if ($(this).attr('data-nav')) {
+                    loadnav($(this).attr('data-nav'));
+
+                }
+
+            })
+
+    });
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+var dataAxis = ['2018-01', '2018-02', '2018-03', '2018-04', '2018-05', '18/06', '18/07', '18/08', '18/09', '18/10', '18/11', '18/12'];
+var data = [66, 88, 69, 65, 88, 92, 63, 92, 110, 92, 90, 60];
+var dataAxis ;
+var yMax = 120;
+var dataShadow = [];
+
+for (var i = 0; i < data.length; i++) {
+    dataShadow.push(yMax);
+}
+
+option = {
+   
+    xAxis: {
+        data: dataAxis,
+        axisLabel: {
+            textStyle: {
+                color: '#999'
+            }
+            
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: false
+        },
+        
+    },
+    yAxis: {
+        splitLine: {
+            show: true,
+            lineStyle:{
+                type:'dotted',
+                color:'#eee'
+            }
+            
+        },
+        axisLine: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLabel: {
+            textStyle: {
+                color: '#999'
+            }
+        },
+    },
+    grid: {
+        left: '0%',
+        right: '0%',
+        bottom: '0%',
+        containLabel: true
+    },
+    series: [
+        { 
+            type: 'bar',
+            itemStyle: {
+                normal: {color: 'rgba(0,0,0,0)'}
+            },
+            barGap:'-100%',
+            barCategoryGap:'77%',
+            data: dataShadow,
+            animation: false
+        },
+        {
+            type: 'bar',
+            itemStyle: {
+                normal: {
+                    barBorderRadius: [25, 25, 0, 0],
+                    color: new echarts.graphic.LinearGradient(
+                        0, 0, 0, 1,
+                        [
+                            {offset: 0, color: '#ece9fe'},
+                            {offset: 0.1, color: '#ece9fe'},
+                            {offset: 1, color: '#ece9fe'}
+                        ]
+                    )
+                },
+                emphasis: {
+//                  barBorderRadius: 7,
+                    color: new echarts.graphic.LinearGradient(
+                        0, 0, 0, 1,
+                        [
+                            {offset: 0, color: '#9a55fe'},
+                            {offset: 0.1, color: '#9a55fe'},
+                            {offset: 1, color: '#773eff'}
+                        ]
+                    )
+                }
+            },
+            label: {
+                normal: {
+                    show: true,
+                    position: 'top',
+                    color: '#ece9fe'
+                },
+                emphasis: {
+                    show: true,
+                    position: 'top',
+                    color: '#7b41ff'
+                } 
+            },
+            data: data
+        }
+    ]
+};
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}   
+</script>
+<script type="text/javascript">
+var doms = document.getElementById("containers");
+var myChart = echarts.init(doms);
+var apps = {};
+options = null;
+apps.title = '环形图';
+
+options = {
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    legend: {
+//      orient: 'vertical',
+//      x: 'center',
+//      y: 'bottom',
+//      itemHeight: 10,
+//      itemWidth: 10,
+//      itemGap: 30,
+        data:[]
+    },
+    series: [
+        {
+            name:'评分比例',
+            type:'pie',
+            radius: ['50%', '62%'],
+            avoidLabelOverlap: false,
+            label: {
+                normal: {
+                    show: false,
+                    position: 'center'
+                },
+                emphasis: {
+                    show: true,
+                    textStyle: {
+                        fontSize: '24',
+                        fontWeight: 'bold'
+                    }
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:3, name:'70-',itemStyle:{color:'#fa535b'}},
+                {value:5, name:'70-90',itemStyle:{color:'#fcc006'}},
+                {value:4, name:'90+',itemStyle:{color:'#4d8fff'}},
+            ]
+        }
+    ]
+};
+;
+if (options && typeof options === "object") {
+    myChart.setOption(options, true);
+}
+</script>

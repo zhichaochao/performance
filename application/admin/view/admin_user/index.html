@@ -87,13 +87,13 @@
                         <td><span>11/23  14:08</span></td>
                         <td><span>激活</span></td>
                         <td>
-                            <button onclick="reset_password('传id')">重置密码</button>
+                            <button onclick="reset_password('传uid')">重置密码</button>
                             <!-- 传id -->
-                            <a class="edit_a" data-href="{:\\think\\Url::build(\'admin_user/editmembera\')}&id=3" data-nav="{:\\think\\Url::build(\'admin_user/nav\')}">修改</a>
+                            <a class="edit_a" data-href="{:\\think\\Url::build(\'admin_user/editmembera\')}&uid=3" data-nav="{:\\think\\Url::build(\'admin_user/nav\')}">修改</a>
                             <!--  -->
-                            <button onclick="frozen_accoun('传id')">冻结</button>
+                            <button onclick="frozen_accoun('传uid')">冻结</button>
 
-                            <button class="del" onclick="delete_members('传id')" >删除</button>
+                            <button class="del" onclick="delete_members('传uid')" >删除</button>
                         </td>
                     </tr>
                     <tr>
@@ -160,13 +160,13 @@
                         <td><span>11/23  14:08</span></td>
                         <td><span>激活</span></td>
                         <td>
-                            <button onclick="reset_password('传id')">重置密码</button>
+                            <button onclick="reset_password('传uid')">重置密码</button>
                             <!-- 传id -->
-                            <a class="edit_a" data-href="{:\\think\\Url::build(\'admin_user/editmembera\')}&id=3" data-nav="{:\\think\\Url::build(\'admin_user/nav\')}">修改</a>
+                            <a class="edit_a" data-href="{:\\think\\Url::build(\'admin_user/editmembera\')}&uid=3" data-nav="{:\\think\\Url::build(\'admin_user/nav\')}">修改</a>
                             <!--  -->
-                            <button onclick="frozen_accoun('传id')">冻结</button>
+                            <button onclick="frozen_accoun('传uid')">冻结</button>
 
-                            <button class="del" onclick="delete_members('传id')" >删除</button>
+                            <button class="del" onclick="delete_members('传uid')" >删除</button>
                         </td>
                     </tr>
                     <tr>
@@ -198,7 +198,7 @@
                         <ol class="bm_ol" id="if_gdt">
                             <h2>选择部门:</h2>
                             <!--  -->
-                            <!-- 删除部门 deletedepartment("传id")  -->
+                            <!-- 删除部门 deletedepartment("传deletedepartment")  -->
 
                             <!-- 展示部门 -->
                             <!-- showment 方法  /admin/admin_user/showment.html ； code =>'0' 成功； $list => 所有部门；$parentlist =>父类部门 -->
@@ -268,45 +268,45 @@ function insertment(){
     }
 
 //删除部门
-function deletedepartment(id){
+function deletedepartment(department_id){
     // alert(11);
             $.ajax({
                 url:'{:\\think\\Url::build("delment")}',
                 type:"post",
-                data: {'id':id},
+                data: {'department_id':department_id},
                 // success:function(){
                 //        location.reload(); 
                 // }
             });
     }
 //删除成员
-function delete_members(id){
+function delete_members(uid){
             $.ajax({
                 url:'{:\\think\\Url::build("delmember")}',
                 type:"post",
-                data: {'id':id},
+                data: {'uid':uid},
                 // success:function(){
                 //        location.reload(); 
                 // }
             });
     }
 //重置密码
-function reset_password(id){
+function reset_password(uid){
             $.ajax({
                 url:'{:\\think\\Url::build("resetpassword")}',
                 type:"post",
-                data: {'id':id},
+                data: {'uid':uid},
                 // success:function(){
                 //        location.reload(); 
                 // }
             });
     }
 //冻结账户
-function frozen_accoun(id){
+function frozen_accoun(uid){
             $.ajax({
                 url:'{:\\think\\Url::build("frozenmember")}',
                 type:"post",
-                data: {'id':id},
+                data: {'uid':uid},
                 // success:function(){
                 //        location.reload(); 
                 // }

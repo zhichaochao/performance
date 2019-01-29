@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:95:"D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_user\newmembera.html";i:1547006099;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:95:"D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_user\newmembera.html";i:1547105519;}*/ ?>
    <!--返回-->
    <!-- <div class="top_nav clearfix"> -->
             <div class="fanhui clearfix">
@@ -87,9 +87,6 @@
         </div>
         <script>
         $('.in_sub').click(function(){
-        // function addmember(){
-            // alert(11);
-          
             var  form =document.getElementById("formmem");
            var formdata =new FormData(form);
            // alert(formdata);
@@ -110,9 +107,9 @@
                 dataType:'json',
                 // async:false,
                 // data: $('#formmem input[type=\'text\'],#formmem input[type=\'hidden\'],#formmem input[type=\'select\']'),
-                // success:function(){
-                //        location.reload(); 
-                // }
+                success:function(){
+                       // location.reload(); 
+                }
             });
     })
     $(function(){

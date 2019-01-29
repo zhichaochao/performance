@@ -1,0 +1,170 @@
+<!--右边主内容-->
+        <div class="rftext_con khdb_text khjg_text clearfix">
+            <p class="tdjx_p">技术部2018年12月团队绩效平均分：<span>89.5分</span></p>
+            <div class="time_xz clearfix" style="float: right;">
+                <div class="label ny_label time_end" style="width: 20.8vw;">
+                    <input class="in_text" type="text" placeholder="选择考核日期" />
+                    
+                    <div class="time_ny">
+                        <div class="top clearfix">
+                            <span class="sp sp_lf"></span>
+                            <input class="ny_in"  onkeyup="this.value=this.value.replace(/\D/g,'')" type="text" value="0000" />
+                            <span class="sp sp_rf"></span>
+                        </div>
+                        <div class="bot clearfix">
+                            <ul class="ul_ny clearfix">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bot clearfix">
+                <table border="" cellspacing="" cellpadding="">
+                    <tr>
+                        <th>头像</th>
+                        <th>姓名</th>
+                        <th>职位</th>
+                        <th>考核日期</th>
+                        <th>评分结果</th>
+                        <th>操作</th>
+                    </tr>
+                    <tr>
+                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><span>王二小</span></td>
+                        <td><span>初级业务员</span></td>
+                        <td><span>2018/11</span></td>
+                        <td><span>96</span></td>
+                        <td>
+                            <a class="pf_a" href="###">查看详情</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><span>王二小</span></td>
+                        <td><span>初级业务员</span></td>
+                        <td><span>2018/11</span></td>
+                        <td><span>96</span></td>
+                        <td>
+                            <a class="pf_a" href="###">查看详情</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><span>王二小</span></td>
+                        <td><span>初级业务员</span></td>
+                        <td><span>2018/11</span></td>
+                        <td><span>96</span></td>
+                        <td>
+                            <a class="pf_a" href="###">查看详情</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><span>王二小</span></td>
+                        <td><span>初级业务员</span></td>
+                        <td><span>2018/11</span></td>
+                        <td><span>96</span></td>
+                        <td>
+                            <a class="pf_a" href="###">查看详情</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><span>王二小</span></td>
+                        <td><span>初级业务员</span></td>
+                        <td><span>2018/11</span></td>
+                        <td><span>96</span></td>
+                        <td>
+                            <a class="pf_a" href="###">查看详情</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><span>王二小</span></td>
+                        <td><span>初级业务员</span></td>
+                        <td><span>2018/11</span></td>
+                        <td><span>96</span></td>
+                        <td>
+                            <a class="pf_a" href="###">查看详情</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><span>王二小</span></td>
+                        <td><span>初级业务员</span></td>
+                        <td><span>2018/11</span></td>
+                        <td><span>96</span></td>
+                        <td>
+                            <a class="pf_a" href="###">查看详情</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+<!-- {extend name="template/base" /}
+{block name="nav"}{/block}
+{block name="content"}
+<div class="page-container">
+    <form action="{:\\think\\Request::instance()->baseUrl()}" method="post" id="form" style="padding-top: 50px">
+        <input type="hidden" name="id" VALUE="{$Request.param.id}" />
+        <div class="cl pd-5 bg-1 bk-gray pos-f" style="left: 20px;right: 20px;top: 20px;">
+            <span class="l">
+                <button type="button" class="btn btn-primary radius" onclick="$('#checkAll').click()">&nbsp;&nbsp;全选&nbsp;&nbsp;</button>
+            </span>
+            <span class="r pt-5 pr-5">
+                <button type="submit" class="btn btn-primary radius">&nbsp;&nbsp;保存&nbsp;&nbsp;</button>
+                <button type="button" class="ml-20 btn btn-default radius" onclick="layer_close()">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+            </span>
+        </div>
+        <table class="table table-border table-bordered table-hover table-bg mt-20">
+            <thead>
+            <tr class="text-c">
+                <th width="80">
+                    <div class="check-box">
+                        <input type="checkbox" id="checkAll">
+                    </div>
+                </th>
+                <th width="150">帐号</th>
+                <th width="150">姓名</th>
+            </tr>
+            </thead>
+            <tbody>
+            {volist name="list" id="vo"}
+            <tr class="text-c">
+                <td>
+                    <div class="check-box">
+                        <input type="checkbox" name="user_id[]" value="{$vo.id}"/>
+                    </div>
+                </td>
+                <td>{$vo.account}</td>
+                <td>{$vo.realname}</td>
+            </tr>
+            {/volist}
+            </tbody>
+        </table>
+    </form>
+</div>
+{/block}
+{block name="script"}
+<script type="text/javascript" src="__LIB__/Validform/5.3.2/Validform.min.js"></script>
+<script>
+    $(function () {
+        var checks = '{$checks}'.split(",");
+        if (checks.length > 0){
+            for (var i in checks){
+                $("[name='user_id[]'][value='"+checks[i]+"']").attr("checked",true);
+            }
+        }
+
+        $("#form").Validform({
+            tiptype:2,
+            ajaxPost:true,
+            showAllError:true,
+            callback:function(ret){
+                ajax_progress(ret);
+            }
+        });
+    })
+</script>
+{/block} -->

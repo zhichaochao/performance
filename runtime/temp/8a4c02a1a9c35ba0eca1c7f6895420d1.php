@@ -1,10 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:91:"D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_group\index.html";i:1547186692;}*/ ?>
-<div class="lfnav_text clearfix top_nav">
-           <div class="nav_con clearfix">
-                <a class="nav_a active" href="###">设置团队目标</a>
-                <a class="nav_a" href="###">同步销售数据</a>
-            </div>
-             </div>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:91:"D:\phpStudy\PHPTutorial\WWW\fsdfsdf\public/../application/admin\view\admin_group\index.html";i:1547538177;}*/ ?>
+
 <!--右边主内容-->
         <div class="rftext_con mbgl_text clearfix">
             <div class="tdmb_text clearfix">
@@ -25,7 +20,7 @@
                         <li><a href="###">技术部</a></li>
                         <li><a href="###">运营部</a></li>
                     </ul>
-                    <a class="szmb_a" href="###">+设置目标</a>
+                    <a class="szmb_a" data-href="<?php echo \think\Url::build('admin_group/setgoals'); ?>" data-nav="<?php echo \think\Url::build('admin_group/nav'); ?>">+设置目标</a>
                 </div>
                 <div class="con clearfix">
                     <ul class="clearfix">
@@ -241,7 +236,8 @@
             </div>
         </div>
 
-        <script type="text/javascript" src="js/echarts.min.js" ></script>
+<script type="text/javascript" src="__STATIC__/js/echarts.min.js" ></script>
+
 <script type="text/javascript">
     var dom1 = document.getElementById("container1");
     var myChart1 = echarts.init(dom1);
@@ -368,6 +364,41 @@
 </script>
 
 <script>
+$(function(){
+            $(".nav_con a").click(function(){
+           // alert(11);
+                if ($(this).attr('data-href')) {
+                    loadhtml($(this).attr('data-href'));
+                }
+                if ($(this).attr('data-nav')) {
+                    loadnav($(this).attr('data-nav'));
+
+                }
+
+            })
+
+    });
+$(function(){
+            $(".top a").click(function(){
+           // alert(11);
+                if ($(this).attr('data-href')) {
+                    loadhtml($(this).attr('data-href'));
+                }
+                if ($(this).attr('data-nav')) {
+                    loadnav($(this).attr('data-nav'));
+
+                }
+
+            })
+
+    });
+
+
+
+           
+
+    
+
     $(function(){
         $(".con>ul>li").hover(function(){
             $(this).addClass("active").siblings("li").removeClass("active");

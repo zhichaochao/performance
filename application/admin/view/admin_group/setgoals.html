@@ -1,0 +1,144 @@
+<!--右边主内容-->
+		<div class="rftext_con mbgl_text clearfix">
+			<div class="szmb_text clearfix">
+				<h1>设置团队目标</h1>
+				<!-- <form action=""> -->
+					<div class="form_div clearfix" id="formmemsetgoals">
+						<div class="top clearfix">
+							<label for="">
+								<span>选择部门<i class="hs">*</i></span>
+								<div class="select_down clearfix" style="overflow: hidden; height: 42px;">
+									<button class="select_btn" type="button" name="deparment" value="12">赫特财务部</button>
+								</div>
+							</label>
+							<label for="">
+								<span>选择时间<i class="hs">*</i></span>
+								<div class="label ny_label">
+									<input class="in_text" type="text" placeholder="2018-11" />
+									<div class="time_ny">
+										<div class="top clearfix">
+											<span class="sp sp_lf"></span>
+											<input class="ny_in" name="month"  onkeyup="this.value=this.value.replace(/\D/g,'')" type="text" value="0000" />
+											<span class="sp sp_rf"></span>
+										</div>
+										<div class="bot clearfix">
+											<ul class="ul_ny clearfix">
+											</ul>
+										</div>
+									</div>
+								</div>
+							</label>
+						</div>
+						<hr />
+						
+						<div class="bot clearfix">
+							<ul class="sjhmb_ul li_xiab clearfix">
+								<li class="clearfix">
+									<p class="p1">数据化目标（<em>1</em>）</p>
+									<label for="">
+										<span>目标名称<i class="hs">*</i></span>
+										<p class="p100" contenteditable="true">团队销售业绩</p>
+									</label>
+									<label for="">
+										<span>目标<i class="hs">*</i></span>
+										<p contenteditable="true">团队销售业绩</p>
+									</label>
+								</li>
+								<button class="add_mb" data-btn="1" type="button">+增加数据化目标</button>
+								<hr />
+							</ul>
+							<ul class="zxxmb_ul li_xiab clearfix">
+								<li class="clearfix">
+									<p class="p1">指向性目标（<em>1</em>）</p>
+									<label for="">
+										<span>目标内容<i class="hs">*</i></span>
+										<p class="p100" contenteditable="true">团队销售业绩</p>
+									</label>
+								</li>
+								<button class="add_mb" data-btn="2" type="button">+增加指向性目标</button>
+								<hr />
+							</ul>
+						</div>
+						<div class="bottom clearfix">
+							<button class="qd_btn clearfix" type="submit" onclick="setgoals();">确定</button>
+						</div>
+					</div>
+				<!-- </form> -->
+			</div>
+		</div>
+  <script type="text/javascript" src="__STATIC__/js/commons.js" ></script>
+		<script>
+		function setgoals(){
+			// alert(11);
+            $.ajax({
+                url:'{:\\think\\Url::build("addsetgoals")}',
+                type:"post",
+                data: $('#formmemsetgoals input[type=\'text\'],#formmemsetgoals input[type=\'hidden\'],#formmemsetgoals input[type=\'button\'],#formmemsetgoals input[type=\'select\']'),
+                // success:function(){
+                //        location.reload(); 
+                // }
+            });
+        }
+
+	$(function(){
+		$(".add_mb").click(function(){
+			const t_btn =parseInt($(this).attr("data-btn"));
+			if(t_btn==1){
+				const li_text = '<li class="clearfix">'+
+									'<hr />'+
+									'<p class="p1">数据化目标（<em>1</em>）</p>'+
+									'<label for="">'+
+										'<span>目标名称<i class="hs">*</i></span>'+
+										'<p class="p100" contenteditable="true"></p>'+
+									'</label>'+
+									'<label for="">'+
+										'<span>目标<i class="hs">*</i></span>'+
+										'<p contenteditable="true"></p>'+
+									'</label>'+
+								'</li>'
+								$(this).before(li_text);
+			}else{
+				const li_text = '<li class="clearfix">'+
+									'<hr />'+
+									'<p class="p1">指向性目标（<em>1</em>）</p>'+
+									'<label for="">'+
+										'<span>目标内容<i class="hs">*</i></span>'+
+										'<p class="p100" contenteditable="true"></p>'+
+									'</label>'+
+								'</li>'
+								$(this).before(li_text);
+			}
+								
+			
+			fy_index();
+		})
+		
+		//	调用员工下拉选择
+		$(".select_down .select_ol>li").click(function(){
+			const this_val = $(this).find("em").text();
+			const texts = '<span class="bumen_sp">'+this_val+' <i class="del"></i></span>';
+			$(".bumen_label").append(texts);
+		})
+		$(".select_down .select_ul>li").click(function(e){
+			const texts = '<span class="bumen_sp">'+$(this).text()+' <i class="del"></i></span>';
+			$(".bumen_label").append(texts);
+			e.stopPropagation();
+		})
+		$(".bumen_label").delegate("i.del","click",function(){
+			$(this).parent().remove();
+		})
+	})
+	
+	//列表序号排列
+	function fy_index(){
+		for (let i=0;i<$(".li_xiab").length;i++){
+			for(let j=0;j<$(".li_xiab").eq(i).find(">li").length;j++){
+				$(".li_xiab").eq(i).find(">li").eq(j).find("em").text(j+1);
+			}
+		}
+	}
+	
+	    	
+//	调用员工下拉选择
+	select_down()
+</script>

@@ -1,0 +1,260 @@
+<!--右边主内容-->
+		<div class="rftext_con khdb_text khjg_text clearfix">
+			<div class="echart tdjx clearfix">
+				<div class="tuxin clearfix">
+					<form action="">
+						<p class="p1">10月团队绩效均分排行榜</p>
+						<div class="label ny_label">
+							<input class="in_sub" type="submit" value="搜索:" />
+							<input class="in_text" type="text" placeholder="2018-11" />
+							
+							<div class="time_ny">
+								<div class="top clearfix">
+									<span class="sp sp_lf"></span>
+									<input class="ny_in"  onkeyup="this.value=this.value.replace(/\D/g,'')" type="text" value="0000" />
+									<span class="sp sp_rf"></span>
+								</div>
+								<div class="bot clearfix">
+									<ul class="ul_ny clearfix">
+									</ul>
+								</div>
+							</div>
+						</div>
+					</form>
+					<div id="container" class="tuxin_div"></div>
+				</div>
+				<div class="right clearfix">
+					<p class="p2">第一名： <span>乐米团队</span></p>
+					<div class="num_text">
+						<p class="num"><span>95.8</span>分</p>
+					</div>
+				</div>
+			</div>
+			<div class="search">
+				<form action="">
+					<input class="in_sub" type="submit" value=""/>
+					<input class="in_text" type="text" placeholder="搜索姓名、部门、职位" />
+				</form>
+			</div>
+			<div class="time_xz clearfix">
+				<div class="label ny_label time_start">
+					<input class="in_text" type="text" placeholder="开始时间" />
+					
+					<div class="time_ny">
+						<div class="top clearfix">
+							<span class="sp sp_lf"></span>
+							<input class="ny_in"  onkeyup="this.value=this.value.replace(/\D/g,'')" type="text" value="0000" />
+							<span class="sp sp_rf"></span>
+						</div>
+						<div class="bot clearfix">
+							<ul class="ul_ny clearfix">
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="label ny_label time_end">
+					<input class="in_text" type="text" placeholder="结束时间" />
+					
+					<div class="time_ny">
+						<div class="top clearfix">
+							<span class="sp sp_lf"></span>
+							<input class="ny_in"  onkeyup="this.value=this.value.replace(/\D/g,'')" type="text" value="0000" />
+							<span class="sp sp_rf"></span>
+						</div>
+						<div class="bot clearfix">
+							<ul class="ul_ny clearfix">
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="daochu clearfix" style="float: right;margin-right: 4.16vw;"> 
+				<span>导出为Excel</span>
+			</div>
+			
+			<div class="bot clearfix">
+				<table border="" cellspacing="" cellpadding="">
+					<tr>
+						<th>序列</th>
+						<th>团队</th>
+						<th class="px">考核日期</th>
+						<th>团队平均分</th>
+						<th>操作</th>
+					</tr>
+					<tr>
+						<td><span>1</span></td>
+						<td><span>全力以赴</span></td>
+						<td><span>2018/11/23</span></td>
+						<td><span>96</span></td>
+						<td>
+							<a class="pf_a" href="###">查看详情</a>
+						</td>
+					</tr>
+					<tr>
+						<td><span>1</span></td>
+						<td><span>全力以赴</span></td>
+						<td><span>2018/11/23</span></td>
+						<td><span>96</span></td>
+						<td>
+							<a class="pf_a" href="###">查看详情</a>
+						</td>
+					</tr>
+					<tr>
+						<td><span>1</span></td>
+						<td><span>全力以赴</span></td>
+						<td><span>2018/11/23</span></td>
+						<td><span>96</span></td>
+						<td>
+							<a class="pf_a" href="###">查看详情</a>
+						</td>
+					</tr>
+					<tr>
+						<td><span>1</span></td>
+						<td><span>全力以赴</span></td>
+						<td><span>2018/11/23</span></td>
+						<td><span>96</span></td>
+						<td>
+							<a class="pf_a" href="###">查看详情</a>
+						</td>
+					</tr>
+					<tr>
+						<td><span>1</span></td>
+						<td><span>全力以赴</span></td>
+						<td><span>2018/11/23</span></td>
+						<td><span>96</span></td>
+						<td>
+							<a class="pf_a" href="###">查看详情</a>
+						</td>
+					</tr>
+					<tr>
+						<td><span>1</span></td>
+						<td><span>全力以赴</span></td>
+						<td><span>2018/11/23</span></td>
+						<td><span>96</span></td>
+						<td>
+							<a class="pf_a" href="###">查看详情</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+		</div>
+		<script type="text/javascript" src="__STATIC__/js/echarts.min.js"></script>
+        <script type="text/javascript" src="__STATIC__/js/commons.js" ></script>
+<script type="text/javascript">
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+var dataAxis = ['总经理', '财务', '人事', '采购', '储运', '技术', '全*赴', '勇*前', '乐米', '思创', '尼佳'];
+var data = [66, 88, 69, 65, 88, 92, 63, 92, 95.8, 92, 90];
+var dataAxis ;
+var yMax = 100;
+var dataShadow = [];
+
+for (var i = 0; i < data.length; i++) {
+    dataShadow.push(yMax);
+}
+
+option = {
+   
+    xAxis: {
+        data: dataAxis,
+        axisLabel: {
+            textStyle: {
+                color: '#999'
+            }
+            
+        },
+        axisTick: {
+            show: false
+        },
+        axisLine: {
+            show: false
+        },
+        
+    },
+    yAxis: {
+    	splitLine: {
+            show: true,
+            lineStyle:{
+                type:'dotted',
+                color:'#eee'
+            }
+            
+        },
+        axisLine: {
+            show: false
+        },
+        axisTick: {
+            show: false
+        },
+        axisLabel: {
+            textStyle: {
+                color: '#999'
+            }
+        },
+    },
+    grid: {
+        left: '0%',
+        right: '0%',
+        bottom: '0%',
+        containLabel: true
+    },
+    series: [
+        { 
+            type: 'bar',
+            itemStyle: {
+                normal: {color: 'rgba(0,0,0,0)'}
+            },
+            barGap:'-100%',
+            barCategoryGap:'70%',
+            data: dataShadow,
+            animation: false
+        },
+        {
+            type: 'bar',
+            itemStyle: {
+                normal: {
+                	barBorderRadius: [25, 25, 0, 0],
+                    color: new echarts.graphic.LinearGradient(
+                        0, 0, 0, 1,
+                        [
+                            {offset: 0, color: '#ece9fe'},
+                            {offset: 0.1, color: '#ece9fe'},
+                            {offset: 1, color: '#ece9fe'}
+                        ]
+                    )
+                },
+                emphasis: {
+//              	barBorderRadius: 7,
+                    color: new echarts.graphic.LinearGradient(
+                        0, 0, 0, 1,
+                        [
+                            {offset: 0, color: '#9a55fe'},
+                            {offset: 0.1, color: '#9a55fe'},
+                            {offset: 1, color: '#773eff'}
+                        ]
+                    )
+                }
+            },
+            label: {
+                normal: {
+                    show: true,
+                    position: 'top',
+                    color: '#ece9fe'
+                },
+	            emphasis: {
+                    show: true,
+                    position: 'top',
+                    color: '#7b41ff'
+                } 
+            },
+            data: data
+        }
+    ]
+};
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}	
+</script>
