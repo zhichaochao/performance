@@ -7,7 +7,7 @@
             <ul id='bu_liist'>
                     <!-- showment 方法  /admin/admin_user/showment.html  code =>'0' 成功 $list  -->
 
-                <li class="active">
+                <!--<li class="active">
                     <a href="###"><span>所有成员（88）</span></a>
                 </li>
                 <li>
@@ -42,7 +42,15 @@
                 </li>
                 <li>
                     <a onclick="loadlist();"><span>储运部（10）</span></a>
+                </li>-->
+                
+                <li v-for="item in list_arr">
+                	<a href="###">
+                		<p class="li_p" style="position: absolute;left: 0;">{{item.department_id}}</p>
+                		<span>{{item.name}}（{{item.number}}）</span>
+                	</a>
                 </li>
+                
             </ul>
         </div>
         
@@ -80,7 +88,7 @@
                     <!-- 展示成员 -->
                     <!-- showdepartment 方法  /admin/admin_user/showdepartment.html  code =>'0'  $departlist   -->
                     <tr>
-                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><img src="__STATIC__/img/grzx_02jpg.jpg"/></td>
                         <td><span>王二小</span></td>
                         <td><span>全力以赴</span></td>
                         <td><span>初级业务员</span></td>
@@ -97,7 +105,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><img src="__STATIC__/img/grzx_02jpg.jpg"/></td>
                         <td><span>王二小</span></td>
                         <td><span>全力以赴</span></td>
                         <td><span>初级业务员</span></td>
@@ -111,7 +119,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><img src="__STATIC__/img/grzx_02jpg.jpg"/></td>
                         <td><span>王二小</span></td>
                         <td><span>全力以赴</span></td>
                         <td><span>初级业务员</span></td>
@@ -125,7 +133,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><img src="__STATIC__/img/grzx_02jpg.jpg"/></td>
                         <td><span>王二小</span></td>
                         <td><span>全力以赴</span></td>
                         <td><span>初级业务员</span></td>
@@ -139,7 +147,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><img src="__STATIC__/img/grzx_02jpg.jpg"/></td>
                         <td><span>王二小</span></td>
                         <td><span>全力以赴</span></td>
                         <td><span>初级业务员</span></td>
@@ -153,7 +161,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td><img src="img/grzx_02jpg.jpg"/></td>
+                        <td><img src="__STATIC__/img/grzx_02jpg.jpg"/></td>
                         <td><span>王二小</span></td>
                         <td><span>全力以赴</span></td>
                         <td><span>初级业务员</span></td>
@@ -167,20 +175,6 @@
                             <button onclick="frozen_accoun('传uid')">冻结</button>
 
                             <button class="del" onclick="delete_members('传uid')" >删除</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/grzx_02jpg.jpg"/></td>
-                        <td><span>王二小</span></td>
-                        <td><span>全力以赴</span></td>
-                        <td><span>初级业务员</span></td>
-                        <td><span>11/23  14:08</span></td>
-                        <td><span>激活</span></td>
-                        <td>
-                            <button>重置密码</button>
-                            <a class="edit_a" href="###">修改</a>
-                            <button>冻结</button>
-                            <button class="del">删除</button>
                         </td>
                     </tr>
                 </table>
@@ -255,6 +249,54 @@
         </div>
 {/block}
 <script>
+/**
+ * 前端
+ */
+//部门数据循环输出	
+
+	$.ajax({
+		url:"http://www.tp.com/admin/admin_user/showment.html",
+		success:function(res){
+        	console.log(res);
+        	console.log(res.msg.list);
+        	var bmsj_arr = res.msg.list;
+        	new Vue({
+				el:'#bu_liist',
+				data:{
+					list_arr: bmsj_arr,
+				}
+			})
+    	}
+	});
+	$(function(){
+		$(document).on('click',"#bu_liist li",function(){
+			var li_id = $(this).find(".li_p").text();
+			console.log(li_id)
+			$.ajax({
+				url:"http://www.tp.com/admin/admin_user/showdepartment.html",
+				type:"post",
+				data:{"department_id":li_id},
+				success:function(res){
+					console.log(res)
+				}
+			})
+		})
+	})
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/**
+ * 后台
+ */	
 //新建部门
 function insertment(){
             $.ajax({
@@ -266,7 +308,6 @@ function insertment(){
                 // }
             });
     }
-
 //删除部门
 function deletedepartment(department_id){
     // alert(11);
@@ -334,25 +375,25 @@ function expord(department_id){
 //             });
 // }
 // 
-$(function(){
-            $(".rftext_con a").click(function(){
-           // alert(11);
-                if ($(this).attr('data-href')) {
-                    loadhtml($(this).attr('data-href'));
-                }
-                if ($(this).attr('data-nav')) {
-                    loadnav($(this).attr('data-nav'));
 
-                }
-
-            })
-
-    });
 
     $(function(){
+ /**
+ * 后台
+ */	
+    	$(".rftext_con a").click(function(){
+            if ($(this).attr('data-href')) {
+                loadhtml($(this).attr('data-href'));
+            }
+            if ($(this).attr('data-nav')) {
+                loadnav($(this).attr('data-nav'));
+            }
+        })
+/**
+ * 前端
+ */	    	
 //      打开弹窗        
         $(".edit_btn").click(function(){
-            // alert(11);
             $(".edit_bm_modal").fadeIn();
             $("body").css("overflow","hidden");
         })
@@ -369,7 +410,6 @@ $(function(){
                 $("body").css("overflow","");
             }
         })
-        
         //双击编辑部门input
         $(".bm_ol").delegate("li","dblclick",function(){
             $(".bm_ol>li input").removeClass("active");
@@ -411,7 +451,6 @@ $(function(){
         })
         
     })
-    
     
     //判断部门编辑是否出现滚动条
     //offsetHeight=scrollHeight=clientHeight则没有滚动条
